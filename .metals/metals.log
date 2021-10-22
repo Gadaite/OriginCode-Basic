@@ -57,3 +57,6 @@ Oct 22, 2021 5:26:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 32
 Oct 22, 2021 5:29:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 38
+[0m2021.10.22 18:12:36 INFO  shutting down Metals[0m
+Oct 22, 2021 6:41:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 76
