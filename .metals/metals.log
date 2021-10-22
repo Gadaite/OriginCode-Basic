@@ -1,0 +1,30 @@
+[0m2021.10.22 13:54:23 INFO  Started: Metals version 0.10.7 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.22 13:54:24 INFO  time: initialize in 0.89s[0m
+[0m2021.10.22 13:54:24 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.22 13:54:24 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.22 13:54:24 WARN  no build target for: /root/Github_files/Scala_ALL/demo1.scala[0m
+[0m2021.10.22 13:54:29 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.22 13:54:36 INFO  time: code lens generation in 8.47s[0m
+[0m2021.10.22 13:55:01 INFO  shutting down Metals[0m
+[0m2021.10.22 15:04:21 INFO  Started: Metals version 0.10.7 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.22 15:04:22 INFO  time: initialize in 0.92s[0m
+[0m2021.10.22 15:04:22 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.22 15:04:22 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.22 15:04:22 WARN  no build target for: /root/Github_files/Scala_ALL/demo1.scala[0m
+[0m2021.10.22 15:04:27 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.22 15:04:33 INFO  time: code lens generation in 8.53s[0m
+Oct 22, 2021 3:08:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 22, 2021 3:08:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 22, 2021 3:08:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.10.22 15:09:16 INFO  Started: Metals version 0.10.7 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.22 15:09:17 INFO  time: initialize in 0.92s[0m
+[0m2021.10.22 15:09:17 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.22 15:09:17 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.22 15:09:17 WARN  no build target for: /root/Github_files/Scala_ALL/demo1.scala[0m
+[0m2021.10.22 15:09:22 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.22 15:09:28 INFO  time: code lens generation in 8.65s[0m
+Oct 22, 2021 3:15:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
