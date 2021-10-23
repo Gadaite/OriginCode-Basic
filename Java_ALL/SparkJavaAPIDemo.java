@@ -18,6 +18,7 @@ public class SparkJavaAPIDemo{
         JavaPairRDD<String, Integer> wordAndCountRDD = wordAndOneRDD.reduceByKey((a, b) -> a + b);
         List<Tuple2<String, Integer>> result = wordAndCountRDD.collect();       
         result.forEach(System.out::println);
+        /*only used to test,but failed8/
     }
 }
 ​
