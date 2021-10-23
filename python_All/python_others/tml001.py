@@ -12,4 +12,5 @@ data = [(0, Vectors.dense([-1.0, -1.0 ]),""),
      (3, Vectors.dense([1.0, 1.0]),"")]
 df = spark.createDataFrame(data, ["id", "features","11"])
 #%%
+
 df.show()
