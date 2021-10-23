@@ -66,3 +66,5 @@ WARNING: Unmatched cancel notification for request id 76
 [0m2021.10.23 13:43:36 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.10.23 13:43:36 WARN  no build target for: /root/Github_files/Scala_ALL/demo1.scala[0m
 [0m2021.10.23 13:43:43 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+Oct 23, 2021 1:44:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
