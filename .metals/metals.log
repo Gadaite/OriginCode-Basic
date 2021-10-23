@@ -68,3 +68,4 @@ WARNING: Unmatched cancel notification for request id 76
 [0m2021.10.23 13:43:43 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
 Oct 23, 2021 1:44:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.10.23 19:10:47 INFO  shutting down Metals[0m
