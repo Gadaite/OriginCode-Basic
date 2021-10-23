@@ -333,3 +333,5 @@ Oct 23, 2021 11:02:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 516
 Oct 23, 2021 11:02:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 528
+[0m2021.10.23 23:11:23 WARN  no build target for: /root/Github_files/Scala_ALL/demo1.scala[0m
+[0m2021.10.23 23:15:02 WARN  no build target for: /root/Github_files/Scala_ALL/demo1.scala[0m
