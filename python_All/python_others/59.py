@@ -24,5 +24,4 @@ def savetocsv(m):
 
 
 #%%
-print("hello world")
-print("test github")
+
