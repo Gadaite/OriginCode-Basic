@@ -1,4 +1,5 @@
 #%%
+from re import I
 from pyspark import SparkConf,SparkContext
 conf = SparkConf().setMaster("local").setAppName("app")
 sc = SparkContext(conf=conf)
@@ -74,3 +75,46 @@ rdd_4 = sc.parallelize([[1,2,3],[4,5,6],[7,8,9]])
 rdd_5 = rdd_2.map(lambda x:[i**2 for i in x])
 rdd_5.collect()
 #%%
+#%%
+rdd_6 = sc.parallelize([1,2,3,4],3)
+rdd_6.collect()
+#%%
+rdd_7 = sc.textFile("/root/Github_files/python_All/Dataset/My_Internship_Experience.txt")
+rdd_7.count()#15行
+#%%
+wordcount_temp1 = rdd_7.flatMap(lambda line:line.split(" "))
+wordcount_temp1.collect()
+#%%
+wordcount_temp2 = wordcount_temp1.map(lambda word:(word,1))
+wordcount_temp2.collect()
+#%%
+wordcount_temp3 = wordcount_temp2.reduceByKey(lambda x,y:x+y)
+wordcount_temp3.collect()
+#%%
+wordcount_temp4 = wordcount_temp3.sortBy(lambda x:x[1],False)
+wordcount_temp4.collect()
+#%%
+wordcount_temp5 = wordcount_temp4.collect()[:10]
+wordcount_temp5
+#%%
+import matplotlib
+import matplotlib.pyplot as plt
+plt.axes(aspect = 1)
+x = [i[1] for i in wordcount_temp5]
+y = [i[0] for i in wordcount_temp5]
+matplotlib.rcParams["text.color"] = 'w'
+plt.pie(x=x,labels=y,autopct="%3.1f %%")
+plt.show()
+
+#%%
+rdd_8 = sc.parallelize([1,2,3,4,5],3)
+rdd_8.collect()
+#%%
+res1 = sc.runJob(rdd_8,lambda x:[i*i for i in x],[0,1])
+res1
+#%%
+rdd_9 = sc.parallelize([[1,2,3],[4,5,6],[7,8,9]],3)
+rdd_9.collect()
+#%%
+res2 = sc.runJob(rdd_9,lambda x:[[j**2 for j in i] for i in x],[1,2])
+res2
