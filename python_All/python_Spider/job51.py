@@ -9,7 +9,7 @@ page = int(input("输入爬取的页数总数"))
 choose = str(input("是否保存(保存输入yes)"))
 
 if(choose == "yes"):
-    f = open("51job.csv",mode='a',encoding='utf-8',newline='')
+    f = open("/root/Github_files/python_All/Dataset/51job_java.csv",mode='a',encoding='utf-8',newline='')
     csv_writer = csv.DictWriter(f,fieldnames=[
         "职位名字",
         "公司名字",
@@ -29,7 +29,14 @@ if(choose == "yes"):
 for i in range(1,page+1):
     print("正在写入第%d页"%(i))
     time.sleep(2.0)#防止访问过快被识别拒绝
-    url = f"https://search.51job.com/list/090200,000000,0000,00,9,99,%25E5%25A4%25A7%25E6%2595%25B0%25E6%258D%25AE%25E5%25BC%2580%25E5%258F%2591%25E5%25B7%25A5%25E7%25A8%258B%25E5%25B8%2588,2,{i}.html?"
+    #下面为大数据开发工程师（成都）
+    #url = f"https://search.51job.com/list/090200,000000,0000,00,9,99,%25E5%25A4%25A7%25E6%2595%25B0%25E6%258D%25AE%25E5%25BC%2580%25E5%258F%2591%25E5%25B7%25A5%25E7%25A8%258B%25E5%25B8%2588,2,{i}.html?"
+    #下面为算法工程师（成都）
+    #url = f"https://search.51job.com/list/090200,000000,0000,00,9,99,%25E7%25AE%2597%25E6%25B3%2595%25E5%25B7%25A5%25E7%25A8%258B%25E5%25B8%2588,2,{i}.html?"
+    #下面为python岗位（成都）
+    #url = f"https://search.51job.com/list/090200,000000,0000,00,9,99,python,2,{i}.html"
+    #虾米那为java岗位（成都）
+    url = f"https://search.51job.com/list/090200,000000,0000,00,9,99,java,2,{i}.html"
     headers ={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36"
     }
