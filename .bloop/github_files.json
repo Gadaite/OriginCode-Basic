@@ -9,7 +9,8 @@
             "/root/Github_files/src/main/scala-2.12",
             "/root/Github_files/src/main/scala-2",
             "/root/Github_files/src/main/java",
-            "/root/Github_files/target/scala-2.12/src_managed/main"
+            "/root/Github_files/target/scala-2.12/src_managed/main",
+            "/root/Github_files/hello.scala.scala"
         ],
         "dependencies": [
             

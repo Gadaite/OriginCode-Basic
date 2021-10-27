@@ -495,3 +495,50 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.10.28 02:42:11 WARN  no build target for: /root/Github_files/package.scala[0m
 Oct 28, 2021 2:42:41 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Oct 28, 2021 2:47:31 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 28, 2021 2:48:11 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 28, 2021 2:50:44 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.10.28 02:59:29 WARN  no build target for: /root/Github_files/hello.scala.scala[0m
+[0m2021.10.28 02:59:53 WARN  no build target for: /root/Github_files/hello.scala.scala[0m
+[0m2021.10.28 02:59:53 INFO  skipping build import with status 'Installed'[0m
+[0m2021.10.28 03:06:48 INFO  running '/usr/java/jdk1.8.0_131/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5611376260536272661/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.28 03:06:50 INFO  [info] welcome to sbt 1.5.5 (Oracle Corporation Java 1.8.0_131)[0m
+[0m2021.10.28 03:06:55 INFO  [info] loading settings for project github_files-build-build from metals.sbt ...[0m
+[0m2021.10.28 03:06:57 INFO  [info] loading project definition from /root/Github_files/project/project[0m
+[0m2021.10.28 03:06:59 INFO  [info] loading settings for project github_files-build from metals.sbt ...[0m
+[0m2021.10.28 03:06:59 INFO  [info] loading project definition from /root/Github_files/project[0m
+[0m2021.10.28 03:07:04 INFO  [success] Generated .bloop/github_files-build.json[0m
+[0m2021.10.28 03:07:04 INFO  [success] Total time: 5 s, completed Oct 28, 2021 3:07:04 AM[0m
+[0m2021.10.28 03:07:04 INFO  [info] set current project to github_files (in build file:/root/Github_files/)[0m
+[0m2021.10.28 03:07:05 INFO  [success] Generated .bloop/github_files.json[0m
+[0m2021.10.28 03:07:05 INFO  [success] Generated .bloop/github_files-test.json[0m
+[0m2021.10.28 03:07:05 INFO  [success] Total time: 0 s, completed Oct 28, 2021 3:07:05 AM[0m
+[0m2021.10.28 03:07:06 INFO  time: ran 'sbt bloopInstall' in 18s[0m
+[0m2021.10.28 03:07:06 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.28 03:07:06 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.28 03:07:06 INFO  Shut down connection with build server.[0m
+[0m2021.10.28 03:07:06 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.28 03:07:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /root/.cache/metals/bsp.trace.json[0m
+[0m2021.10.28 03:07:06 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.28 03:07:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /root/.cache/metals/bsp.trace.json[0m
+[0m2021.10.28 03:07:06 INFO  time: Connected to build server in 0.16s[0m
+[0m2021.10.28 03:07:06 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.10.28 03:07:07 INFO  time: indexed workspace in 1.08s[0m
+[0m2021.10.28 03:07:08 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.10.28 03:07:12 INFO  compiling github_files (1 scala source)[0m
+[0m2021.10.28 03:07:35 INFO  time: compiled github_files in 22s[0m
+[0m2021.10.28 03:07:35 INFO  compiling github_files (1 scala source)[0m
+[0m2021.10.28 03:07:35 INFO  time: compiled github_files in 0.24s[0m
+[0m2021.10.28 03:08:14 INFO  compiling github_files (1 scala source)[0m
+[0m2021.10.28 03:08:14 INFO  time: compiled github_files in 0.48s[0m
+[0m2021.10.28 03:09:59 INFO  skipping build import with status 'Installed'[0m
+[0m2021.10.28 03:09:59 INFO  compiling github_files (1 scala source)[0m
+[0m2021.10.28 03:10:00 INFO  compiling github_files-test (1 scala source)[0m
+[0m2021.10.28 03:10:00 INFO  time: compiled github_files in 1.23s[0m
+[0m2021.10.28 03:10:00 INFO  time: compiled github_files-test in 0.33s[0m
+[0m2021.10.28 03:11:51 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
+[0m2021.10.28 03:12:15 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m

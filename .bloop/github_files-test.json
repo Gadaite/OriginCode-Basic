@@ -9,7 +9,8 @@
             "/root/Github_files/src/test/scala-2.12",
             "/root/Github_files/src/test/scala-2",
             "/root/Github_files/src/test/java",
-            "/root/Github_files/target/scala-2.12/src_managed/test"
+            "/root/Github_files/target/scala-2.12/src_managed/test",
+            "/root/Github_files/hello.scala.scala"
         ],
         "dependencies": [
             "github_files"
