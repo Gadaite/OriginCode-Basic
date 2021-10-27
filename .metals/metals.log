@@ -552,3 +552,5 @@ No more data in the client stdin, exiting...
 [0m2021.10.28 03:34:27 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala.scala[0m
 [0m2021.10.28 03:37:02 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala[0m
 [0m2021.10.28 03:37:52 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala[0m
+[0m2021.10.28 04:54:52 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala[0m
+[0m2021.10.28 05:11:37 WARN  no build target for: /root/Github_files/project/project/src/src/main/scala/SimpleApp.scala[0m

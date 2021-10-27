@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/root/Github_files/apache_spark/hello.word.scala:1:12: object apache is not a member of package org[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/root/Github_files/apache_spark/hello.word.scala:5:14: not found: value SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m    val ss = SparkSession.builder[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
