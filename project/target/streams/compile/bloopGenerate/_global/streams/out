@@ -1,4 +1,4 @@
-[debug] [github_files-build] Classpath dependencies List()
-[debug] [github_files-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'github_files-build' to '/root/Github_files/project/.bloop/github_files-build.json'
-[success] Generated .bloop/github_files-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[github_files-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[github_files-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'github_files-build' to '/root/Github_files/project/.bloop/github_files-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/github_files-build.json[0m

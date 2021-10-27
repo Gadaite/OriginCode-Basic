@@ -545,3 +545,10 @@ No more data in the client stdin, exiting...
 [0m2021.10.28 03:13:21 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
 [0m2021.10.28 03:15:19 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
 [0m2021.10.28 03:15:48 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
+[0m2021.10.28 03:30:41 WARN  no build target for: /root/Github_files/apache_spark/project/src/package.scala[0m
+[0m2021.10.28 03:31:44 WARN  no build target for: /root/Github_files/apache_spark/project/src/helloworld.scala.scala[0m
+[0m2021.10.28 03:32:35 WARN  no build target for: /root/Github_files/apache_spark/project/src/package.scala[0m
+[0m2021.10.28 03:33:52 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala.scala[0m
+[0m2021.10.28 03:34:27 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala.scala[0m
+[0m2021.10.28 03:37:02 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala[0m
+[0m2021.10.28 03:37:52 WARN  no build target for: /root/Github_files/apache_spark/project/src/Main.scala[0m
