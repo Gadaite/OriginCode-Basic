@@ -1,22 +1,24 @@
-
 #%%
-import time
 import random
-start=time.time()
-y=[random.randint(1,10000000000) for i in range(0,100)]
-y
+list = [random.randint(1,20) for i in range(1,10)]
+list
 #%%
-count =0 
-for i in range(0,99):
-    for j in range(i+1,100):
-        if y[i] > y[j]:
-            y[i], y[j]=y[j], y[i]
-        count = count+1
-        if(time.time()-start >= 20):
-            break
+from functools import reduce
+#%%
+list_max = reduce(lambda x,y:x if x>y else y,list)
+list_max
+#%%
+list_temp = list.copy()
+list_temp.sort()
+list_temp
+#%%
+list
+#%%
+list_res = sorted(list)
+list_res
 
-print(y)
-end=time.time()
-print(end-start)
-# %%
-print("hello !!")
+#%%
+""""
+    sort()会改变原来的顺序
+    sorted()不会改变原来的顺序
+"""
