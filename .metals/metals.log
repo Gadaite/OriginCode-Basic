@@ -542,3 +542,6 @@ No more data in the client stdin, exiting...
 [0m2021.10.28 03:10:00 INFO  time: compiled github_files-test in 0.33s[0m
 [0m2021.10.28 03:11:51 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
 [0m2021.10.28 03:12:15 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
+[0m2021.10.28 03:13:21 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
+[0m2021.10.28 03:15:19 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
+[0m2021.10.28 03:15:48 WARN  no build target for: /root/Github_files/apache_spark/hello.word.scala[0m
