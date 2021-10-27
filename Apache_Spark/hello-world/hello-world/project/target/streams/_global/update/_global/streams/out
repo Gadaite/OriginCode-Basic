@@ -1,0 +1,3 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/root/Github_files/Apache_Spark/hello-world/hello-world/project/"), "hello-world-build")...
+[debug] Done updating ProjectRef(uri("file:/root/Github_files/Apache_Spark/hello-world/hello-world/project/"), "hello-world-build")

@@ -12,3 +12,6 @@
 # Set the extra sbt options
 
 # -Dsbt.log.format=true
+
+-Dsbt.override.build.repos=true
+
