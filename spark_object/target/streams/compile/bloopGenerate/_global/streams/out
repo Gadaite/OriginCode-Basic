@@ -1,0 +1,4 @@
+[debug] [spark_object] Classpath dependencies List()
+[debug] [spark_object] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'spark_object' to '/root/Github_files/spark_object/.bloop/spark_object.json'
+[success] Generated .bloop/spark_object.json

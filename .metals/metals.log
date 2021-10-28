@@ -61,3 +61,230 @@ INFO: Unsupported notification method: $/setTrace
 [0m2021.10.28 12:35:47 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
 [0m2021.10.28 12:35:54 INFO  time: code lens generation in 10s[0m
 [0m2021.10.28 12:35:54 INFO  time: code lens generation in 10s[0m
+[0m2021.10.28 12:58:23 INFO  Started: Metals version 0.10.8 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.28 12:58:24 INFO  time: initialize in 0.88s[0m
+[0m2021.10.28 12:58:28 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.28 12:58:28 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.28 12:58:28 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 12:58:32 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.28 12:59:34 INFO  shutting down Metals[0m
+[0m2021.10.28 13:24:52 INFO  Started: Metals version 0.10.8 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.28 13:24:53 INFO  time: initialize in 0.93s[0m
+[0m2021.10.28 13:24:54 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.28 13:24:54 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.28 13:24:54 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:24:58 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.28 13:25:04 INFO  time: code lens generation in 8.64s[0m
+[0m2021.10.28 13:27:33 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.28 13:27:34 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.28 13:28:16 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.28 13:29:12 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:29:15 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:29:15 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:29:19 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:35:05 ERROR [0m
+[0m2021.10.28 13:35:05 ERROR https://github.com/scala/hello-world.g8.git: Secure connection to https://github.com/scala/hello-world.g8.git could not be established because of SSL problems[0m
+[0m2021.10.28 13:35:05 ERROR [0m
+[0m2021.10.28 13:35:05 INFO  time: ran 'giter8.Giter8' in 2m3s[0m
+[0m2021.10.28 13:35:59 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:40:44 INFO  [0m
+[0m2021.10.28 13:40:44 INFO  Template applied in /root/Github_files/./spark_object[0m
+[0m2021.10.28 13:40:44 INFO  [0m
+[0m2021.10.28 13:40:44 INFO  time: ran 'giter8.Giter8' in 6.65s[0m
+[0m2021.10.28 13:40:50 INFO  shutting down Metals[0m
+[0m2021.10.28 13:46:53 INFO  Started: Metals version 0.10.8 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.28 13:46:54 INFO  time: initialize in 0.84s[0m
+[0m2021.10.28 13:46:55 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.28 13:46:55 WARN  no build tool detected in workspace '/root/Github_files'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.28 13:46:55 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/main/scala/Main.scala[0m
+[0m2021.10.28 13:46:59 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.28 13:47:05 INFO  time: code lens generation in 1.9s[0m
+[0m2021.10.28 13:47:05 INFO  time: code lens generation in 8.5s[0m
+[0m2021.10.28 13:47:30 WARN  no build target for: /root/Github_files/Apache_Spark/hello-world/hello-world/src/build.sbt[0m
+[0m2021.10.28 13:48:00 WARN  no build target for: /root/Github_files/build.sbt[0m
+[0m2021.10.28 13:48:00 WARN  no build target for: /root/Github_files/build.sbt[0m
+[0m2021.10.28 13:48:09 INFO  running '/usr/java/jdk1.8.0_131/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Dsbt.version=1.5.4 -jar /tmp/metals2704374887896384989/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.28 13:48:10 WARN  no build target for: /root/Github_files/project/metals.sbt[0m
+[0m2021.10.28 13:48:10 WARN  no build target for: /root/Github_files/project/project/metals.sbt[0m
+[0m2021.10.28 13:48:10 ERROR [info] [launcher] getting org.scala-sbt sbt 1.5.4  (this may take some time)...[0m
+[0m2021.10.28 13:50:24 INFO  skipping build import with status 'Started'[0m
+[0m2021.10.28 13:51:11 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.5.4/sbt-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:11 ERROR :: loading settings :: url = jar:file:/tmp/metals2704374887896384989/sbt-launch.jar!/org/apache/ivy/core/settings/ivysettings.xml[0m
+[0m2021.10.28 13:51:11 ERROR 	[SUCCESSFUL ] org.scala-sbt#sbt;1.5.4!sbt.jar (892ms)[0m
+[0m2021.10.28 13:51:11 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.14/scala-library-2.12.14.jar ...[0m
+[0m2021.10.28 13:51:13 ERROR 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.14!scala-library.jar (1821ms)[0m
+[0m2021.10.28 13:51:13 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.5.4/main_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:13 ERROR 	[SUCCESSFUL ] org.scala-sbt#main_2.12;1.5.4!main_2.12.jar (849ms)[0m
+[0m2021.10.28 13:51:13 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.5.1/io_2.12-1.5.1.jar ...[0m
+[0m2021.10.28 13:51:15 ERROR 	[SUCCESSFUL ] org.scala-sbt#io_2.12;1.5.1!io_2.12.jar (791ms)[0m
+[0m2021.10.28 13:51:15 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.5.4/logic_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:15 ERROR 	[SUCCESSFUL ] org.scala-sbt#logic_2.12;1.5.4!logic_2.12.jar (764ms)[0m
+[0m2021.10.28 13:51:15 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.5.4/actions_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:17 ERROR 	[SUCCESSFUL ] org.scala-sbt#actions_2.12;1.5.4!actions_2.12.jar (767ms)[0m
+[0m2021.10.28 13:51:17 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.5.4/main-settings_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:17 ERROR 	[SUCCESSFUL ] org.scala-sbt#main-settings_2.12;1.5.4!main-settings_2.12.jar (781ms)[0m
+[0m2021.10.28 13:51:17 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.5.4/run_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:18 ERROR 	[SUCCESSFUL ] org.scala-sbt#run_2.12;1.5.4!run_2.12.jar (765ms)[0m
+[0m2021.10.28 13:51:18 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.5.4/command_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:18 ERROR 	[SUCCESSFUL ] org.scala-sbt#command_2.12;1.5.4!command_2.12.jar (779ms)[0m
+[0m2021.10.28 13:51:18 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.5.4/collections_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:20 ERROR 	[SUCCESSFUL ] org.scala-sbt#collections_2.12;1.5.4!collections_2.12.jar (774ms)[0m
+[0m2021.10.28 13:51:20 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.5.4/scripted-plugin_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:20 ERROR 	[SUCCESSFUL ] org.scala-sbt#scripted-plugin_2.12;1.5.4!scripted-plugin_2.12.jar (760ms)[0m
+[0m2021.10.28 13:51:20 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.5.4/zinc-lm-integration_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:21 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-lm-integration_2.12;1.5.4!zinc-lm-integration_2.12.jar (764ms)[0m
+[0m2021.10.28 13:51:21 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.5.4/util-logging_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:21 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-logging_2.12;1.5.4!util-logging_2.12.jar (838ms)[0m
+[0m2021.10.28 13:51:21 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.3.0/scala-xml_2.12-1.3.0.jar ...[0m
+[0m2021.10.28 13:51:23 ERROR 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.3.0!scala-xml_2.12.jar(bundle) (783ms)[0m
+[0m2021.10.28 13:51:23 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.3.2/launcher-interface-1.3.2.jar ...[0m
+[0m2021.10.28 13:51:23 ERROR 	[SUCCESSFUL ] org.scala-sbt#launcher-interface;1.3.2!launcher-interface.jar (761ms)[0m
+[0m2021.10.28 13:51:23 ERROR downloading https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5.jar ...[0m
+[0m2021.10.28 13:51:24 ERROR 	[SUCCESSFUL ] com.github.ben-manes.caffeine#caffeine;2.8.5!caffeine.jar (813ms)[0m
+[0m2021.10.28 13:51:24 ERROR downloading https://repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.0.8/lm-coursier-shaded_2.12-2.0.8.jar ...[0m
+[0m2021.10.28 13:51:26 ERROR 	[SUCCESSFUL ] io.get-coursier#lm-coursier-shaded_2.12;2.0.8!lm-coursier-shaded_2.12.jar (1230ms)[0m
+[0m2021.10.28 13:51:26 ERROR downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar ...[0m
+[0m2021.10.28 13:51:26 ERROR 	[SUCCESSFUL ] org.apache.logging.log4j#log4j-api;2.11.2!log4j-api.jar (797ms)[0m
+[0m2021.10.28 13:51:26 ERROR downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar ...[0m
+[0m2021.10.28 13:51:27 ERROR 	[SUCCESSFUL ] org.apache.logging.log4j#log4j-core;2.11.2!log4j-core.jar (815ms)[0m
+[0m2021.10.28 13:51:27 ERROR downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.11.2/log4j-slf4j-impl-2.11.2.jar ...[0m
+[0m2021.10.28 13:51:27 ERROR 	[SUCCESSFUL ] org.apache.logging.log4j#log4j-slf4j-impl;2.11.2!log4j-slf4j-impl.jar (760ms)[0m
+[0m2021.10.28 13:51:27 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.5.2/librarymanagement-core_2.12-1.5.2.jar ...[0m
+[0m2021.10.28 13:51:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#librarymanagement-core_2.12;1.5.2!librarymanagement-core_2.12.jar (785ms)[0m
+[0m2021.10.28 13:51:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.5.2/librarymanagement-ivy_2.12-1.5.2.jar ...[0m
+[0m2021.10.28 13:51:29 ERROR 	[SUCCESSFUL ] org.scala-sbt#librarymanagement-ivy_2.12;1.5.2!librarymanagement-ivy_2.12.jar (776ms)[0m
+[0m2021.10.28 13:51:29 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.5.5/compiler-interface-1.5.5.jar ...[0m
+[0m2021.10.28 13:51:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#compiler-interface;1.5.5!compiler-interface.jar (763ms)[0m
+[0m2021.10.28 13:51:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.5.5/zinc-compile_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:51:30 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-compile_2.12;1.5.5!zinc-compile_2.12.jar (766ms)[0m
+[0m2021.10.28 13:51:30 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.5.4/util-relation_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:32 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-relation_2.12;1.5.4!util-relation_2.12.jar (772ms)[0m
+[0m2021.10.28 13:51:32 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.5.4/util-position_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:32 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-position_2.12;1.5.4!util-position_2.12.jar (764ms)[0m
+[0m2021.10.28 13:51:32 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/sjson-new-scalajson_2.12/0.9.1/sjson-new-scalajson_2.12-0.9.1.jar ...[0m
+[0m2021.10.28 13:51:33 ERROR 	[SUCCESSFUL ] com.eed3si9n#sjson-new-scalajson_2.12;0.9.1!sjson-new-scalajson_2.12.jar (768ms)[0m
+[0m2021.10.28 13:51:33 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.14/scala-reflect-2.12.14.jar ...[0m
+[0m2021.10.28 13:51:33 ERROR 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.14!scala-reflect.jar (986ms)[0m
+[0m2021.10.28 13:51:33 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/sjson-new-core_2.12/0.9.1/sjson-new-core_2.12-0.9.1.jar ...[0m
+[0m2021.10.28 13:51:35 ERROR 	[SUCCESSFUL ] com.eed3si9n#sjson-new-core_2.12;0.9.1!sjson-new-core_2.12.jar (788ms)[0m
+[0m2021.10.28 13:51:35 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/0.9.1/shaded-jawn-parser_2.12-0.9.1.jar ...[0m
+[0m2021.10.28 13:51:35 ERROR 	[SUCCESSFUL ] com.eed3si9n#shaded-jawn-parser_2.12;0.9.1!shaded-jawn-parser_2.12.jar (764ms)[0m
+[0m2021.10.28 13:51:35 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4.jar ...[0m
+[0m2021.10.28 13:51:37 ERROR 	[SUCCESSFUL ] com.eed3si9n#shaded-scalajson_2.12;1.0.0-M4!shaded-scalajson_2.12.jar (765ms)[0m
+[0m2021.10.28 13:51:37 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.5.4/completion_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:37 ERROR 	[SUCCESSFUL ] org.scala-sbt#completion_2.12;1.5.4!completion_2.12.jar (784ms)[0m
+[0m2021.10.28 13:51:37 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.5.4/task-system_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:38 ERROR 	[SUCCESSFUL ] org.scala-sbt#task-system_2.12;1.5.4!task-system_2.12.jar (829ms)[0m
+[0m2021.10.28 13:51:38 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.5.4/tasks_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:38 ERROR 	[SUCCESSFUL ] org.scala-sbt#tasks_2.12;1.5.4!tasks_2.12.jar (766ms)[0m
+[0m2021.10.28 13:51:38 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.5.4/testing_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:40 ERROR 	[SUCCESSFUL ] org.scala-sbt#testing_2.12;1.5.4!testing_2.12.jar (781ms)[0m
+[0m2021.10.28 13:51:40 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.5.4/util-tracking_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:40 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-tracking_2.12;1.5.4!util-tracking_2.12.jar (761ms)[0m
+[0m2021.10.28 13:51:40 ERROR downloading https://repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar ...[0m
+[0m2021.10.28 13:51:42 ERROR 	[SUCCESSFUL ] org.jline#jline-terminal;3.19.0!jline-terminal.jar (778ms)[0m
+[0m2021.10.28 13:51:42 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.5.5/zinc-classpath_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:51:42 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-classpath_2.12;1.5.5!zinc-classpath_2.12.jar (778ms)[0m
+[0m2021.10.28 13:51:42 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.5.5/zinc-apiinfo_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:51:43 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-apiinfo_2.12;1.5.5!zinc-apiinfo_2.12.jar (771ms)[0m
+[0m2021.10.28 13:51:43 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.5.5/zinc_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:51:43 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc_2.12;1.5.5!zinc_2.12.jar (813ms)[0m
+[0m2021.10.28 13:51:43 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.5.4/util-control_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:45 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-control_2.12;1.5.4!util-control_2.12.jar (765ms)[0m
+[0m2021.10.28 13:51:45 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/jline/jline/2.14.7-sbt-a1b0ffbb8f64bb820f4f84a0c07a0c0964507493/jline-2.14.7-sbt-a1b0ffbb8f64bb820f4f84a0c07a0c0964507493.jar ...[0m
+[0m2021.10.28 13:51:45 ERROR 	[SUCCESSFUL ] org.scala-sbt.jline#jline;2.14.7-sbt-a1b0ffbb8f64bb820f4f84a0c07a0c0964507493!jline.jar (764ms)[0m
+[0m2021.10.28 13:51:45 ERROR downloading https://repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar ...[0m
+[0m2021.10.28 13:51:46 ERROR 	[SUCCESSFUL ] org.jline#jline-reader;3.19.0!jline-reader.jar (773ms)[0m
+[0m2021.10.28 13:51:46 ERROR downloading https://repo1.maven.org/maven2/org/jline/jline-builtins/3.19.0/jline-builtins-3.19.0.jar ...[0m
+[0m2021.10.28 13:51:46 ERROR 	[SUCCESSFUL ] org.jline#jline-builtins;3.19.0!jline-builtins.jar (768ms)[0m
+[0m2021.10.28 13:51:46 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.5.4/util-interface-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:48 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-interface;1.5.4!util-interface.jar (762ms)[0m
+[0m2021.10.28 13:51:48 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.5.4/core-macros_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:48 ERROR 	[SUCCESSFUL ] org.scala-sbt#core-macros_2.12;1.5.4!core-macros_2.12.jar (831ms)[0m
+[0m2021.10.28 13:51:48 ERROR downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar ...[0m
+[0m2021.10.28 13:51:49 ERROR 	[SUCCESSFUL ] org.jline#jline-terminal-jna;3.19.0!jline-terminal-jna.jar (788ms)[0m
+[0m2021.10.28 13:51:49 ERROR downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jansi/3.19.0/jline-terminal-jansi-3.19.0.jar ...[0m
+[0m2021.10.28 13:51:49 ERROR 	[SUCCESSFUL ] org.jline#jline-terminal-jansi;3.19.0!jline-terminal-jansi.jar (762ms)[0m
+[0m2021.10.28 13:51:49 ERROR downloading https://repo1.maven.org/maven2/com/lmax/disruptor/3.4.2/disruptor-3.4.2.jar ...[0m
+[0m2021.10.28 13:51:51 ERROR 	[SUCCESSFUL ] com.lmax#disruptor;3.4.2!disruptor.jar (766ms)[0m
+[0m2021.10.28 13:51:51 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.14/scala-compiler-2.12.14.jar ...[0m
+[0m2021.10.28 13:51:53 ERROR 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.14!scala-compiler.jar (1695ms)[0m
+[0m2021.10.28 13:51:53 ERROR downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.1.0/jansi-2.1.0.jar ...[0m
+[0m2021.10.28 13:51:53 ERROR 	[SUCCESSFUL ] org.fusesource.jansi#jansi;2.1.0!jansi.jar (771ms)[0m
+[0m2021.10.28 13:51:53 ERROR downloading https://repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.6/file-tree-views-2.1.6.jar ...[0m
+[0m2021.10.28 13:51:54 ERROR 	[SUCCESSFUL ] com.swoval#file-tree-views;2.1.6!file-tree-views.jar (771ms)[0m
+[0m2021.10.28 13:51:54 ERROR downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.5.0/jna-5.5.0.jar ...[0m
+[0m2021.10.28 13:51:54 ERROR 	[SUCCESSFUL ] net.java.dev.jna#jna;5.5.0!jna.jar (808ms)[0m
+[0m2021.10.28 13:51:54 ERROR downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.5.0/jna-platform-5.5.0.jar ...[0m
+[0m2021.10.28 13:51:56 ERROR 	[SUCCESSFUL ] net.java.dev.jna#jna-platform;5.5.0!jna-platform.jar (843ms)[0m
+[0m2021.10.28 13:51:56 ERROR downloading https://repo1.maven.org/maven2/org/jline/jline-style/3.19.0/jline-style-3.19.0.jar ...[0m
+[0m2021.10.28 13:51:56 ERROR 	[SUCCESSFUL ] org.jline#jline-style;3.19.0!jline-style.jar (760ms)[0m
+[0m2021.10.28 13:51:56 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.5.4/util-cache_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:57 ERROR 	[SUCCESSFUL ] org.scala-sbt#util-cache_2.12;1.5.4!util-cache_2.12.jar (808ms)[0m
+[0m2021.10.28 13:51:57 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.9.1/sjson-new-murmurhash_2.12-0.9.1.jar ...[0m
+[0m2021.10.28 13:51:57 ERROR 	[SUCCESSFUL ] com.eed3si9n#sjson-new-murmurhash_2.12;0.9.1!sjson-new-murmurhash_2.12.jar (760ms)[0m
+[0m2021.10.28 13:51:57 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.5.4/test-agent-1.5.4.jar ...[0m
+[0m2021.10.28 13:51:59 ERROR 	[SUCCESSFUL ] org.scala-sbt#test-agent;1.5.4!test-agent.jar (787ms)[0m
+[0m2021.10.28 13:51:59 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar ...[0m
+[0m2021.10.28 13:51:59 ERROR 	[SUCCESSFUL ] org.scala-sbt#test-interface;1.0!test-interface.jar (760ms)[0m
+[0m2021.10.28 13:51:59 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.5.5/compiler-bridge_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:52:00 ERROR 	[SUCCESSFUL ] org.scala-sbt#compiler-bridge_2.12;1.5.5!compiler-bridge_2.12.jar (768ms)[0m
+[0m2021.10.28 13:52:00 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.5.5/zinc-classfile_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:52:00 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-classfile_2.12;1.5.5!zinc-classfile_2.12.jar (772ms)[0m
+[0m2021.10.28 13:52:00 ERROR downloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar ...[0m
+[0m2021.10.28 13:52:02 ERROR 	[SUCCESSFUL ] com.jcraft#jsch;0.1.54!jsch.jar (768ms)[0m
+[0m2021.10.28 13:52:02 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/gigahorse-okhttp_2.12/0.5.0/gigahorse-okhttp_2.12-0.5.0.jar ...[0m
+[0m2021.10.28 13:52:02 ERROR 	[SUCCESSFUL ] com.eed3si9n#gigahorse-okhttp_2.12;0.5.0!gigahorse-okhttp_2.12.jar (761ms)[0m
+[0m2021.10.28 13:52:02 ERROR downloading https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp-urlconnection/3.7.0/okhttp-urlconnection-3.7.0.jar ...[0m
+[0m2021.10.28 13:52:04 ERROR 	[SUCCESSFUL ] com.squareup.okhttp3#okhttp-urlconnection;3.7.0!okhttp-urlconnection.jar (760ms)[0m
+[0m2021.10.28 13:52:04 ERROR downloading https://repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.5.0/gigahorse-core_2.12-0.5.0.jar ...[0m
+[0m2021.10.28 13:52:04 ERROR 	[SUCCESSFUL ] com.eed3si9n#gigahorse-core_2.12;0.5.0!gigahorse-core_2.12.jar (764ms)[0m
+[0m2021.10.28 13:52:04 ERROR downloading https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2.jar ...[0m
+[0m2021.10.28 13:52:05 ERROR 	[SUCCESSFUL ] com.squareup.okhttp3#okhttp;3.14.2!okhttp.jar (772ms)[0m
+[0m2021.10.28 13:52:05 ERROR downloading https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.4.0/ssl-config-core_2.12-0.4.0.jar ...[0m
+[0m2021.10.28 13:52:05 ERROR 	[SUCCESSFUL ] com.typesafe#ssl-config-core_2.12;0.4.0!ssl-config-core_2.12.jar(bundle) (768ms)[0m
+[0m2021.10.28 13:52:05 ERROR downloading https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar ...[0m
+[0m2021.10.28 13:52:07 ERROR 	[SUCCESSFUL ] org.reactivestreams#reactive-streams;1.0.2!reactive-streams.jar (760ms)[0m
+[0m2021.10.28 13:52:07 ERROR downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar ...[0m
+[0m2021.10.28 13:52:07 ERROR 	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.26!slf4j-api.jar (762ms)[0m
+[0m2021.10.28 13:52:07 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar ...[0m
+[0m2021.10.28 13:52:08 ERROR 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.1.2!scala-parser-combinators_2.12.jar(bundle) (767ms)[0m
+[0m2021.10.28 13:52:08 ERROR downloading https://repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar ...[0m
+[0m2021.10.28 13:52:08 ERROR 	[SUCCESSFUL ] com.typesafe#config;1.3.3!config.jar(bundle) (805ms)[0m
+[0m2021.10.28 13:52:08 ERROR downloading https://repo1.maven.org/maven2/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar ...[0m
+[0m2021.10.28 13:52:10 ERROR 	[SUCCESSFUL ] com.squareup.okio#okio;1.17.2!okio.jar (764ms)[0m
+[0m2021.10.28 13:52:10 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.5.5/zinc-core_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:52:10 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-core_2.12;1.5.5!zinc-core_2.12.jar (778ms)[0m
+[0m2021.10.28 13:52:10 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.5.5/zinc-persist_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:52:11 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-persist_2.12;1.5.5!zinc-persist_2.12.jar (769ms)[0m
+[0m2021.10.28 13:52:11 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.5.5/zinc-compile-core_2.12-1.5.5.jar ...[0m
+[0m2021.10.28 13:52:11 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-compile-core_2.12;1.5.5!zinc-compile-core_2.12.jar (780ms)[0m
+[0m2021.10.28 13:52:11 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.5.5/zinc-persist-core-assembly-1.5.5.jar ...[0m
+[0m2021.10.28 13:52:13 ERROR 	[SUCCESSFUL ] org.scala-sbt#zinc-persist-core-assembly;1.5.5!zinc-persist-core-assembly.jar (829ms)[0m
+[0m2021.10.28 13:52:13 ERROR downloading https://repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.10.1/zero-allocation-hashing-0.10.1.jar ...[0m
+[0m2021.10.28 13:52:13 ERROR 	[SUCCESSFUL ] net.openhft#zero-allocation-hashing;0.10.1!zero-allocation-hashing.jar(bundle) (765ms)[0m
+[0m2021.10.28 13:52:13 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.5.1/sbinary_2.12-0.5.1.jar ...[0m
+[0m2021.10.28 13:52:14 ERROR 	[SUCCESSFUL ] org.scala-sbt#sbinary_2.12;0.5.1!sbinary_2.12.jar (768ms)[0m
+[0m2021.10.28 13:52:14 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.5.4/protocol_2.12-1.5.4.jar ...[0m
+[0m2021.10.28 13:52:14 ERROR 	[SUCCESSFUL ] org.scala-sbt#protocol_2.12;1.5.4!protocol_2.12.jar (786ms)[0m
+[0m2021.10.28 13:52:14 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.jar ...[0m
+[0m2021.10.28 13:52:16 ERROR 	[SUCCESSFUL ] org.scala-sbt#template-resolver;0.1!template-resolver.jar (763ms)[0m
+[0m2021.10.28 13:52:16 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.3.1/ipcsocket-1.3.1.jar ...[0m
+[0m2021.10.28 13:52:16 ERROR 	[SUCCESSFUL ] org.scala-sbt.ipcsocket#ipcsocket;1.3.1!ipcsocket.jar (765ms)[0m
+[0m2021.10.28 13:52:16 ERROR downloading https://repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1.jar ...[0m
+[0m2021.10.28 13:52:18 ERROR 	[SUCCESSFUL ] org.checkerframework#checker-qual;3.4.1!checker-qual.jar (765ms)[0m
+[0m2021.10.28 13:52:18 ERROR downloading https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.4.0/error_prone_annotations-2.4.0.jar ...[0m
+[0m2021.10.28 13:52:18 ERROR 	[SUCCESSFUL ] com.google.errorprone#error_prone_annotations;2.4.0!error_prone_annotations.jar (762ms)[0m
+[0m2021.10.28 13:52:18 ERROR downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.4.2/scala-collection-compat_2.12-2.4.2.jar ...[0m
+[0m2021.10.28 13:52:19 ERROR 	[SUCCESSFUL ] org.scala-lang.modules#scala-collection-compat_2.12;2.4.2!scala-collection-compat_2.12.jar (771ms)[0m
+[0m2021.10.28 13:52:19 ERROR downloading https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745/ivy-2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745.jar ...[0m
+[0m2021.10.28 13:52:19 ERROR 	[SUCCESSFUL ] org.scala-sbt.ivy#ivy;2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745!ivy.jar (797ms)[0m
+[0m2021.10.28 13:52:19 ERROR :: retrieving :: org.scala-sbt#boot-app[0m
+[0m2021.10.28 13:52:19 ERROR 	confs: [default][0m
+[0m2021.10.28 13:52:20 ERROR 	83 artifacts copied, 0 already retrieved[0m
+[0m2021.10.28 13:52:23 INFO  [info] Updated file /root/Github_files/project/build.properties: set sbt.version to 1.5.4[0m
+[0m2021.10.28 13:52:23 INFO  [info] welcome to sbt 1.5.4 (Oracle Corporation Java 1.8.0_131)[0m
+[0m2021.10.28 13:52:27 INFO  running '/usr/java/jdk1.8.0_131/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals8245074873654917325/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.28 13:52:34 INFO  [info] welcome to sbt 1.5.4 (Oracle Corporation Java 1.8.0_131)[0m
+[0m2021.10.28 13:52:35 INFO  [info] loading settings for project github_files-build-build from metals.sbt ...[0m
+[0m2021.10.28 13:52:38 INFO  [info] loading project definition from /root/Github_files/project/project[0m

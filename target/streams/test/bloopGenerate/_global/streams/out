@@ -1,0 +1,4 @@
+[debug] [spark_object-test] Classpath dependencies List()
+[debug] [spark_object-test] Dependencies from configurations List(spark_object)
+[debug] Bloop wrote the configuration of project 'spark_object-test' to '/root/Github_files/spark_object/.bloop/spark_object-test.json'
+[success] Generated .bloop/spark_object-test.json

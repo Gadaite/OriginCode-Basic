@@ -1,4 +1,0 @@
-[debug] [hello-world-build] Classpath dependencies List()
-[debug] [hello-world-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'hello-world-build' to '/root/Github_files/Apache_Spark/hello-world/hello-world/project/.bloop/hello-world-build.json'
-[success] Generated .bloop/hello-world-build.json

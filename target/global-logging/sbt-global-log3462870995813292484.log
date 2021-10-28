@@ -1,0 +1,49 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[info] Updated file /root/Github_files/project/build.properties: set sbt.version to 1.5.4
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.4 (Oracle Corporation Java 1.8.0_131)
+[debug] Load.defaultLoad until apply took 553.426931ms
+[debug]                 Load.loadUnit: plugins took 148.856796ms
+[debug]                 Load.loadUnit: defsScala took 0.386504ms
+[debug] [Loading] Scanning directory /root/Github_files/project/project
+[debug]                   Load.loadUnit: mkEval took 224.37777ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /root/Github_files/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 80.338667 ms
+[info] loading settings for project github_files-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(github_files-build-build) took 1330.341394ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id github_files-build-build, base: /root/Github_files/project/project, plugins: List(<none>))) took 1443.142089ms
+[debug] [Loading] Done in /root/Github_files/project/project, returning: (github_files-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 11061.161969ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 28.593533ms
+[debug]               Load.loadUnit(file:/root/Github_files/project/project/, ...) took 11243.886837ms
+[debug]             Load.apply: load took 11626.906089ms
+[debug]             Load.apply: resolveProjects took 4.627648ms
+[debug]             Load.apply: finalTransforms took 260.718443ms
+[debug]             Load.apply: config.delegates took 6.5994ms
+[debug]             Load.apply: Def.make(settings)... took 2418.919114ms
+[debug]             Load.apply: structureIndex took 351.422284ms
+[debug]             Load.apply: mkStreams took 39.592023ms
+[info] loading project definition from /root/Github_files/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
