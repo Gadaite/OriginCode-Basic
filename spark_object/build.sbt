@@ -79,3 +79,6 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 scalaVersion := "2.11.12"
 libraryDependencies +="org.apache.spark"%%"spark-core"%"2.4.5"
 libraryDependencies +="org.apache.spark"%%"spark-sql"%"2.4.5"
+
+
+logLevel := Level.Error

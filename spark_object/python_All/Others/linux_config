@@ -1,3 +1,14 @@
 1.      netstat -tunlp
+
 2.      systemctl status/start/stop flask_api/flask_ymade
-3.      systemctl 
+
+3.      pg_dump -U postgres -d myDBname -f dump.sql
+
+4.      createdb newDBname
+        psql -d newDBname -U postgres -f dump.sql
+
+5.      git status
+        git commit -m "info"
+        git push origin master
+
+5.      
