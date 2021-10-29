@@ -84,5 +84,6 @@ object rdd_two {
     // spark.read.format("jdbc").options(options).load().show()
     val optionsdf = options.load()
     optionsdf.show()
+    spark.stop()
   }
 }

@@ -19,6 +19,7 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.2/scala-parser-combinators_2.11-1.1.2.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.5/spark-core_2.11-2.4.5.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.5/spark-sql_2.11-2.4.5.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.24/mysql-connector-java-8.0.24.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-hadoop2.jar",
@@ -79,6 +80,7 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.1/parquet-hadoop-1.10.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar",
@@ -115,7 +117,6 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.5/orc-shims-1.5.5.jar",
-            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/airlift/aircompressor/0.10/aircompressor-0.10.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1.jar",
@@ -331,6 +332,23 @@
                             "name": "spark-sql_2.11",
                             "classifier": "sources",
                             "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.5/spark-sql_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "mysql",
+                    "name": "mysql-connector-java",
+                    "version": "8.0.24",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "mysql-connector-java",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.24/mysql-connector-java-8.0.24.jar"
+                        },
+                        {
+                            "name": "mysql-connector-java",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.24/mysql-connector-java-8.0.24-sources.jar"
                         }
                     ]
                 },
@@ -1304,6 +1322,23 @@
                     ]
                 },
                 {
+                    "organization": "com.google.protobuf",
+                    "name": "protobuf-java",
+                    "version": "3.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "protobuf-java",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.codehaus.jackson",
                     "name": "jackson-core-asl",
                     "version": "1.9.13",
@@ -1912,23 +1947,6 @@
                             "name": "orc-shims",
                             "classifier": "sources",
                             "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.5/orc-shims-1.5.5-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.google.protobuf",
-                    "name": "protobuf-java",
-                    "version": "2.5.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "protobuf-java",
-                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"
-                        },
-                        {
-                            "name": "protobuf-java",
-                            "classifier": "sources",
-                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0-sources.jar"
                         }
                     ]
                 },
