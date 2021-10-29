@@ -11,4 +11,12 @@
         git commit -m "info"
         git push origin master
 
-5.      
+5.      cat /proc/meminfo (内存使用情况)
+        free -h 
+        gnome-system-monitor （最近一段时间内的 CPU、内存、交换区及网络的使用情况的视图工具）
+        htop （每个进程的内存实时使用率）
+        top （实时的运行中的程序的资源使用统计）
+
+6.      sudo atop （监控，查看高负载）
+
+7.

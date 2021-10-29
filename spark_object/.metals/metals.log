@@ -13944,3 +13944,2111 @@ java.lang.NullPointerException
 	at scala.Option.flatMap(Option.scala:171)
 	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
 
+[0m2021.10.29 00:16:34 INFO  Deduplicating compilation of spark_object from bsp client 'Metals 0.10.8' (since 1h 52m 23.775s)[0m
+[0m2021.10.29 00:16:34 WARN  Error downloading ch.epfl.scala:scala-expression-compiler_2.11.12:2.0.8
+  not found: https://maven.aliyun.com/repository/central/ch/epfl/scala/scala-expression-compiler_2.11.12/2.0.8/scala-expression-compiler_2.11.12-2.0.8.pom[0m
+[0m2021.10.29 00:16:34 WARN  Expression evaluation will not work.[0m
+[0m2021.10.29 00:16:34 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /root/.cache/metals/dap-server.trace.json[0m
+[0m2021.10.29 00:16:34 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /root/.cache/metals/dap-client.trace.json[0m
+[0m2021.10.29 00:16:35 INFO  Starting debug proxy for [rdd_two][0m
+[0m2021.10.29 00:16:36 INFO  Trying to attach to remote debuggee VM VM-16-5-centos:34999 .[0m
+[0m2021.10.29 00:16:36 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.10.29 00:16:36 ERROR Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties[0m
+[0m2021.10.29 00:16:36 ERROR 21/10/29 00:16:37 WARN Utils: Your hostname, VM-16-5-centos resolves to a loopback address: 127.0.0.1; using 172.27.16.5 instead (on interface eth0)[0m
+[0m2021.10.29 00:16:36 ERROR 21/10/29 00:16:37 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address[0m
+[0m2021.10.29 00:16:36 ERROR 21/10/29 00:16:37 INFO SparkContext: Running Spark version 2.4.5[0m
+[0m2021.10.29 00:16:36 ERROR 21/10/29 00:16:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:37 INFO SparkContext: Submitted application: rdd_two$[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SecurityManager: Changing view acls to: root[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SecurityManager: Changing modify acls to: root[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SecurityManager: Changing view acls groups to: [0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SecurityManager: Changing modify acls groups to: [0m
+[0m2021.10.29 00:16:38 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO Utils: Successfully started service 'sparkDriver' on port 42957.[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SparkEnv: Registering MapOutputTracker[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SparkEnv: Registering BlockManagerMaster[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-64232849-ea35-4bfb-9f50-9d89a494723a[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO MemoryStore: MemoryStore started with capacity 856.8 MB[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SparkEnv: Registering OutputCommitCoordinator[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.27.16.5:4040[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO Executor: Starting executor ID driver on host localhost[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38945.[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO NettyBlockTransferService: Server created on 172.27.16.5:38945[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy[0m
+[0m2021.10.29 00:16:38 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.27.16.5, 38945, None)[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManagerMasterEndpoint: Registering block manager 172.27.16.5:38945 with 856.8 MB RAM, BlockManagerId(driver, 172.27.16.5, 38945, None)[0m
+[0m2021.10.29 00:16:38 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:38 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.27.16.5, 38945, None)[0m
+[0m2021.10.29 00:16:37 ERROR 21/10/29 00:16:38 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.27.16.5, 38945, None)[0m
+[0m2021.10.29 00:16:40 ERROR 21/10/29 00:16:40 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/root/Github_files/spark_object/spark-warehouse').[0m
+[0m2021.10.29 00:16:40 ERROR 21/10/29 00:16:40 INFO SharedState: Warehouse path is 'file:/root/Github_files/spark_object/spark-warehouse'.[0m
+[0m2021.10.29 00:16:40 ERROR 21/10/29 00:16:40 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:41 INFO CodeGenerator: Code generated in 205.534535 ms[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:41 INFO CodeGenerator: Code generated in 17.77296 ms[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO InMemoryFileIndex: It took 27 ms to list leaf files for 1 paths.[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO InMemoryFileIndex: It took 4 ms to list leaf files for 2 paths.[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO ContextCleaner: Cleaned accumulator 0[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO FileSourceStrategy: Pruning directories with: [0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#22, None)) > 0)[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO FileSourceStrategy: Output Data Schema: struct<value: string>[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO FileSourceScanExec: Pushed Filters: [0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO CodeGenerator: Code generated in 16.015358 ms[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO CodeGenerator: Code generated in 17.443573 ms[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:41 ERROR 21/10/29 00:16:42 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 220.9 KB, free 856.6 MB)[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:42 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 856.6 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.27.16.5:38945 (size: 20.6 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:42 INFO SparkContext: Created broadcast 0 from load at rdd_two.scala:31[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 8409290 bytes, open cost is considered as scanning 4194304 bytes.[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:42 INFO SparkContext: Starting job: load at rdd_two.scala:31[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Got job 0 (load at rdd_two.scala:31) with 1 output partitions[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Final stage: ResultStage 0 (load at rdd_two.scala:31)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Missing parents: List()[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at load at rdd_two.scala:31), which has no missing parents[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.9 KB, free 856.6 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.6 KB, free 856.6 MB)[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.27.16.5:38945 (size: 4.6 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1163[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at load at rdd_two.scala:31) (first 15 tasks are for partitions Vector(0))[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8310 bytes)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileScanRDD: Reading File path: file:///root/Github_files/python_All/Dataset/seeds_dataset.csv, range: 0-10341, partition values: [empty row][0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO CodeGenerator: Code generated in 9.956013 ms[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1353 bytes result sent to driver[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 240 ms on localhost (executor driver) (1/1)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: ResultStage 0 (load at rdd_two.scala:31) finished in 0.418 s[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Job 0 finished: load at rdd_two.scala:31, took 0.474953 s[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceStrategy: Pruning directories with: [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceStrategy: Post-Scan Filters: [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceStrategy: Output Data Schema: struct<value: string>[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceScanExec: Pushed Filters: [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO CodeGenerator: Code generated in 29.456076 ms[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 220.9 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.27.16.5:38945 (size: 20.6 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO SparkContext: Created broadcast 2 from load at rdd_two.scala:31[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 8409290 bytes, open cost is considered as scanning 4194304 bytes.[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 25[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 26[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 15[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 13[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 22[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 16[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 2[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 11[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceStrategy: Pruning directories with: [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceStrategy: Post-Scan Filters: [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, area: string, perimeter: string, compactness: string, lengthOfKernel: string ... 7 more fields>[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO FileSourceScanExec: Pushed Filters: [0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 172.27.16.5:38945 in memory (size: 4.6 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 12[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 172.27.16.5:38945 in memory (size: 20.6 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 10[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 1[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 17[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 28[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 24[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 20[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 4[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 23[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 29[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 7[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 9[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 27[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 5[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 19[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 21[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 6[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 14[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 31[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 3[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 18[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 30[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO ContextCleaner: Cleaned accumulator 8[0m
+[0m2021.10.29 00:16:42 ERROR 21/10/29 00:16:43 INFO CodeGenerator: Code generated in 33.292261 ms[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 220.9 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 20.6 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.27.16.5:38945 (size: 20.6 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO SparkContext: Created broadcast 3 from show at rdd_two.scala:32[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4204645 bytes, open cost is considered as scanning 4194304 bytes.[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO SparkContext: Starting job: show at rdd_two.scala:32[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Got job 1 (show at rdd_two.scala:32) with 1 output partitions[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Final stage: ResultStage 1 (show at rdd_two.scala:32)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Missing parents: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[13] at show at rdd_two.scala:32), which has no missing parents[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 10.9 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.9 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.27.16.5:38945 (size: 5.9 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1163[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[13] at show at rdd_two.scala:32) (first 15 tasks are for partitions Vector(0))[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 8278 bytes)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:43 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO FileScanRDD: Reading File path: file:///root/Github_files/python_All/Dataset/seeds_dataset.csv, range: 0-10341, partition values: [empty row][0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 27.991494 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2526 bytes result sent to driver[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 99 ms on localhost (executor driver) (1/1)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool [0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: ResultStage 1 (show at rdd_two.scala:32) finished in 0.127 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Job 1 finished: show at rdd_two.scala:32, took 0.131340 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 36.244289 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO SparkContext: Starting job: json at rdd_two.scala:52[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Got job 2 (json at rdd_two.scala:52) with 1 output partitions[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Final stage: ResultStage 2 (json at rdd_two.scala:52)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Missing parents: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[17] at json at rdd_two.scala:52), which has no missing parents[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 6.1 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.8 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.27.16.5:38945 (size: 3.8 KB, free: 856.8 MB)[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1163[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[17] at json at rdd_two.scala:52) (first 15 tasks are for partitions Vector(0))[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 8254 bytes)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1798 bytes result sent to driver[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 45 ms on localhost (executor driver) (1/1)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool [0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: ResultStage 2 (json at rdd_two.scala:52) finished in 0.092 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Job 2 finished: json at rdd_two.scala:52, took 0.100006 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 15.546821 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 13.720402 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO SparkContext: Starting job: show at rdd_two.scala:54[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Got job 3 (show at rdd_two.scala:54) with 1 output partitions[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Final stage: ResultStage 3 (show at rdd_two.scala:54)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Missing parents: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[27] at show at rdd_two.scala:54), which has no missing parents[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 13.7 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 7.1 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.27.16.5:38945 (size: 7.1 KB, free: 856.7 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1163[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[27] at show at rdd_two.scala:54) (first 15 tasks are for partitions Vector(0))[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 8254 bytes)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 12.073668 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1277 bytes result sent to driver[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 57 ms on localhost (executor driver) (1/1)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool [0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: ResultStage 3 (show at rdd_two.scala:54) finished in 0.110 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Job 3 finished: show at rdd_two.scala:54, took 0.117215 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 9.021502 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO SparkContext: Starting job: show at rdd_two.scala:62[0m
+[0m2021.10.29 00:16:44 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:44 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Got job 4 (show at rdd_two.scala:62) with 1 output partitions[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Final stage: ResultStage 4 (show at rdd_two.scala:62)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Missing parents: List()[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[43] at show at rdd_two.scala:62), which has no missing parents[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 13.5 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 7.0 KB, free 856.3 MB)[0m
+[0m2021.10.29 00:16:44 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:44 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 172.27.16.5:38945 (size: 7.0 KB, free: 856.7 MB)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1163[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[43] at show at rdd_two.scala:62) (first 15 tasks are for partitions Vector(0))[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 8182 bytes)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO CodeGenerator: Code generated in 25.069303 ms[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1273 bytes result sent to driver[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 55 ms on localhost (executor driver) (1/1)[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool [0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: ResultStage 4 (show at rdd_two.scala:62) finished in 0.082 s[0m
+[0m2021.10.29 00:16:43 ERROR 21/10/29 00:16:44 INFO DAGScheduler: Job 4 finished: show at rdd_two.scala:62, took 0.088866 s[0m
+[0m2021.10.29 00:16:44 ERROR Exception in thread "main" java.lang.ClassNotFoundException: com.mysql.jdbc.Driver[0m
+[0m2021.10.29 00:16:44 ERROR 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)[0m
+[0m2021.10.29 00:16:44 ERROR 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)[0m
+[0m2021.10.29 00:16:44 ERROR 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)[0m
+[0m2021.10.29 00:16:44 ERROR 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.jdbc.DriverRegistry$.register(DriverRegistry.scala:45)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions$$anonfun$5.apply(JDBCOptions.scala:99)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions$$anonfun$5.apply(JDBCOptions.scala:99)[0m
+[0m2021.10.29 00:16:44 ERROR 	at scala.Option.foreach(Option.scala:257)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:99)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:35)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:32)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:318)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:223)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)[0m
+[0m2021.10.29 00:16:44 ERROR 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:167)[0m
+[0m2021.10.29 00:16:44 ERROR 	at rdd_two$.main(rdd_two.scala:85)[0m
+[0m2021.10.29 00:16:44 ERROR 	at rdd_two.main(rdd_two.scala)[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO SparkContext: Invoking stop() from shutdown hook[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 59[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 49[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 74[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 60[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 120[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 122[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 96[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 77[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 129[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 39[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 148[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 113[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 75[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 94[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 142[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 127[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 84[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 76[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 104[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ContextCleaner: Cleaned accumulator 114[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 172.27.16.5:38945 in memory (size: 5.9 KB, free: 856.7 MB)[0m
+[0m2021.10.29 00:16:44 ERROR unexpected error during source scanning
+java.lang.RuntimeException: invalid symbol format
+#
+^
+	at scala.sys.package$.error(package.scala:30)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.fail(Scala.scala:200)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.readChar(Scala.scala:213)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseValue(Scala.scala:231)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.parseDescriptor(Scala.scala:256)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser.entryPoint(Scala.scala:279)
+	at scala.meta.internal.semanticdb.Scala$DescriptorParser$.apply(Scala.scala:287)
+	at scala.meta.internal.semanticdb.Scala$ScalaSymbolOps.owner(Scala.scala:101)
+	at scala.meta.internal.mtags.Symbol.toplevel(Symbol.scala:56)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:149)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:129)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:116)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:116)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definitions(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.DestinationProvider.definition(DefinitionProvider.scala:297)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:335)
+	at scala.meta.internal.metals.DestinationProvider.fromSymbol(DefinitionProvider.scala:355)
+	at scala.meta.internal.metals.DefinitionProvider.fromSymbol(DefinitionProvider.scala:104)
+	at scala.meta.internal.metals.StacktraceAnalyzer.findLocationForSymbol$1(StacktraceAnalyzer.scala:69)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$2(StacktraceAnalyzer.scala:74)
+	at scala.PartialFunction$Unlifted.applyOrElse(PartialFunction.scala:237)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:180)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:167)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.metals.StacktraceAnalyzer.$anonfun$fileLocationFromLine$1(StacktraceAnalyzer.scala:74)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.StacktraceAnalyzer.fileLocationFromLine(StacktraceAnalyzer.scala:72)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1(DebugProxy.scala:182)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleServerMessage$1$adapted(DebugProxy.scala:159)
+	at scala.meta.internal.metals.debug.ServerAdapter.$anonfun$onReceived$1(ServerAdapter.scala:25)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:66)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO SparkUI: Stopped Spark web UI at http://172.27.16.5:4040[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped![0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO MemoryStore: MemoryStore cleared[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO BlockManager: BlockManager stopped[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO BlockManagerMaster: BlockManagerMaster stopped[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped![0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO SparkContext: Successfully stopped SparkContext[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ShutdownHookManager: Shutdown hook called[0m
+[0m2021.10.29 00:16:44 ERROR 21/10/29 00:16:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-7aa657d4-15de-40e0-ae99-a57685d61e06[0m
+[0m2021.10.29 00:16:45 INFO  Canceling debug proxy for [rdd_two][0m
+[0m2021.10.29 00:16:44 INFO  Closing debug server tcp://0.0.0.0:39031[0m
+Oct 29, 2021 12:18:31 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:18:33 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:18:35 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:18:35 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:18:57 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:18:57 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:18:58 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 29, 2021 12:26:57 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:122)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.meta.internal.pc.HoverProvider$$anonfun$hover$1.apply(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:171)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.29 11:22:13 INFO  shutting down Metals[0m
+[0m2021.10.29 11:22:13 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.29 11:22:13 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.29 12:31:10 INFO  Started: Metals version 0.10.8 in workspace '/root/Github_files/spark_object' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.29 12:31:10 INFO  time: initialize in 0.57s[0m
+[0m2021.10.29 12:31:11 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8761439835622884972/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.10.29 12:31:11 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8761439835622884972/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8761439835622884972/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.29 12:31:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /root/.cache/metals/bsp.trace.json[0m
+[0m2021.10.29 12:31:11 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1361485881303289029/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1361485881303289029/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1361485881303289029/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.29 12:31:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /root/.cache/metals/bsp.trace.json[0m
+[0m2021.10.29 12:31:12 INFO  time: Connected to build server in 0.72s[0m
+[0m2021.10.29 12:31:12 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.10.29 12:31:15 INFO  time: indexed workspace in 3.13s[0m
+[0m2021.10.29 12:31:16 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+Oct 29, 2021 12:46:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
