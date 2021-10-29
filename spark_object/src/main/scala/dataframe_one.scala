@@ -2,6 +2,10 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
 import scala.collection.mutable.ArrayBuffer
 import org.apache.spark.sql.Row
+/**
+  * @yanyyi
+  * 2021-10-29
+  */
 object dataframe_one extends App{
     val spark = SparkSession.builder.appName("APP").master("local[*]").getOrCreate()
     val sc = spark.sparkContext

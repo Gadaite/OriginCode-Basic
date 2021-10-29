@@ -19,4 +19,10 @@
 
 6.      sudo atop （监控，查看高负载）
 
-7.
+7.      free -h(查看内存)
+        sync && echo 3 >/proc/sys/vm/drop_caches
+        ///proc/sys/vm/drop_caches中的默认值为0，
+        值为1时表示可以释放pagecache缓存，
+        值为2时可以释放pagecache和inode缓存，
+        值为3时可以释放pagecache, dentries和inodes缓存。
+        当然在释放内存之前需要执行sync命令
