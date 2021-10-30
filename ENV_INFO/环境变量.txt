@@ -1,0 +1,27 @@
+export JAVA_HOME=/usr/java/jdk1.8.0_131
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+#scala
+export SCALA_HOME=/home/service/scala-2.11.0
+export PATH=$SCALA_HOME/bin:$PATH
+
+#hadoop
+export HADOOP_HOME=/home/service/hadoop-2.7.7
+export PATH=$HADOOP_HOME/bin:$PATH
+
+#spark
+export SPARK_HOME=/home/service/spark-2.4.5-bin-hadoop2.7
+#export PATH=$SPARK_HOME/bin
+export PATH=$SPARK_HOME/bin:$PATH
+
+#anaconda
+export PATH=/root/miniconda3/bin:$PATH
+
+#sbt
+export PATH=/root/Github_files/Scala_ALL/sbt/:$PATH
+
+#Hbase
+#export HBASE_HOME=/home/service/hbase-1.4.13
+#export PATH=$HBASE_HOME/bin:$PATH
+
