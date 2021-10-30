@@ -9,7 +9,7 @@ object functionsdf extends App{
     override def main(args: Array[String]): Unit = {
         val spark = SparkSession.builder.appName("APP").master("local[*]").getOrCreate()
         val sc = spark.sparkContext
-        val inputdf = spark.read.format("csv").option("header",true).load("/root/Github_files/python_All/Dataset/iris-data.csv")
+        val inputdf = spark.read.format("csv").option("header",true).load("/root/Github_files/spark_object/python_All/Dataset/iris-data.csv")
         inputdf.show()
         def func1(x:Any,y:Any):Double ={
             return x.toString().toDouble * y.toString().toDouble

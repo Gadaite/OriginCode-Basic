@@ -25,3 +25,5 @@ udf_function
 dfs = df.withColumn("A+B",udf_function("A","B"))
 dfs.show()
 #%%
+spark.stop()
+#%%

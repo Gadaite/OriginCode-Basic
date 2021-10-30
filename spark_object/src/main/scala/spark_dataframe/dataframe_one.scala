@@ -15,7 +15,7 @@ object dataframe_one extends App{
     /**
         第一个算子部分，把从界面输入的参数转换成一个DataFrame
     **/
-    //定义模拟前面传入的dataframe
+    //定义模拟前面传入的dataframe,数据来自于界面的参数输入，此处模拟
     val imsi =12//界面参数输入IMSI
     val col1 = "TW"//界面参数输入country_region
     val col2 = ""//界面参数输入company
@@ -44,6 +44,7 @@ object dataframe_one extends App{
       */
 
     /**
+      * 模拟待筛选的数据 
       * 导入待筛选的数据表,此处模拟生成,以2020-10-23号数据为例
       */
 
