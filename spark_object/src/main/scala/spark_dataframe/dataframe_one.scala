@@ -1,3 +1,6 @@
+package spark_dataframe
+
+
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
 import scala.collection.mutable.ArrayBuffer

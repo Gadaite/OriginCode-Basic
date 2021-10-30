@@ -1,3 +1,5 @@
+package spark_rdd
+
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkConf
 object Main extends App {

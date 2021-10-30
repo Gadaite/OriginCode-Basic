@@ -1,3 +1,6 @@
+package spark_dataframe
+
+
 import org.apache.spark.sql.SparkSession
 import scala.collection.mutable.ArrayBuffer
 import org.apache.spark.sql.Row
