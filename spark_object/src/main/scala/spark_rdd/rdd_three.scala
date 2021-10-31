@@ -173,6 +173,8 @@ object rdd_three extends App{
             println(item)
         }
         println("-----"*20)
+        
+        println("hello world")
 
         //元素个数
         println(rdd_1_1.collect().length)//4
