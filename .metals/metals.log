@@ -425,3 +425,4 @@ Caused by: java.nio.file.NoSuchFileException: /root/Github_files/build.sbt
 	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:1280)
 	... 16 more
 
+[0m2021.10.31 23:46:28 INFO  shutting down Metals[0m
