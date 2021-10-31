@@ -302,3 +302,18 @@ INFO: Unsupported notification method: $/setTrace
 [0m2021.10.31 23:32:21 INFO  skipping build import with status 'Dismissed'[0m
 Oct 31, 2021 11:32:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.10.31 23:33:34 INFO  shutting down Metals[0m
+[0m2021.10.31 23:35:10 INFO  Started: Metals version 0.10.8 in workspace '/root/Github_files' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.31 23:35:10 INFO  time: initialize in 0.59s[0m
+[0m2021.10.31 23:35:11 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.31 23:35:50 WARN  no build target for: /root/Github_files/build.sbt[0m
+[0m2021.10.31 23:35:53 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.31 23:35:55 INFO  time: code lens generation in 1.26s[0m
+[0m2021.10.31 23:35:55 INFO  time: code lens generation in 4.7s[0m
+[0m2021.10.31 23:36:00 WARN  no build target for: /root/Github_files/build.sbt[0m
+[0m2021.10.31 23:36:15 WARN  no build target for: /root/Github_files/build.sbt[0m
+[0m2021.10.31 23:36:15 INFO  skipping build import with status 'Dismissed'[0m
+[0m2021.10.31 23:36:17 WARN  no build target for: /root/Github_files/build.sbt[0m
+[0m2021.10.31 23:36:17 INFO  skipping build import with status 'Dismissed'[0m
+Oct 31, 2021 11:36:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
