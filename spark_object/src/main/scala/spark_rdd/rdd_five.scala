@@ -154,7 +154,9 @@ object rdd_five extends App{
             (3,(CompactBuffer(4, 6),CompactBuffer(9)))
           */
         
-        
+        spark.stop()
+        sc.stop()
+        spark.close()
 
 
     }
