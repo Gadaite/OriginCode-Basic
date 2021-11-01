@@ -24,5 +24,8 @@
         ///proc/sys/vm/drop_caches中的默认值为0，
         值为1时表示可以释放pagecache缓存，
         值为2时可以释放pagecache和inode缓存，
-        值为3时可以释放pagecache, dentries和inodes缓存。
-        当然在释放内存之前需要执行sync命令
+        值为3时可以释放pagecache, dentries和inodes缓存,
+        当然在释放内存之前需要执行sync命令.
+
+8.      压缩文件夹： zip -r flask_ymade.zip flask_api_ymade
+        解压缩文件： unzip flask_ymade.zip
