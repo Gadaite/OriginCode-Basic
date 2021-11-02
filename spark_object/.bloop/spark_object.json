@@ -19,6 +19,7 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.2/scala-parser-combinators_2.11-1.1.2.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.5/spark-core_2.11-2.4.5.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.5/spark-sql_2.11-2.4.5.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.4.5/spark-mllib_2.11-2.4.5.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.24/mysql-connector-java-8.0.24.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.jar",
@@ -80,6 +81,10 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.1/parquet-hadoop-1.10.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.4.5/spark-streaming_2.11-2.4.5.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.4.5/spark-graphx_2.11-2.4.5.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.4.5/spark-mllib-local_2.11-2.4.5.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar",
@@ -128,6 +133,13 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.2/breeze-macros_2.11-0.13.2.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/spire-math/spire_2.11/0.13.0/spire_2.11-0.13.0.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar",
@@ -151,6 +163,9 @@
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.13.0/spire-macros_2.11-0.13.0.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.1/machinist_2.11-0.6.1.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar",
@@ -332,6 +347,23 @@
                             "name": "spark-sql_2.11",
                             "classifier": "sources",
                             "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.5/spark-sql_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-mllib_2.11",
+                    "version": "2.4.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spark-mllib_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.4.5/spark-mllib_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name": "spark-mllib_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.4.5/spark-mllib_2.11-2.4.5-sources.jar"
                         }
                     ]
                 },
@@ -1322,6 +1354,74 @@
                     ]
                 },
                 {
+                    "organization": "org.apache.spark",
+                    "name": "spark-streaming_2.11",
+                    "version": "2.4.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spark-streaming_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.4.5/spark-streaming_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name": "spark-streaming_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.4.5/spark-streaming_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-graphx_2.11",
+                    "version": "2.4.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spark-graphx_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.4.5/spark-graphx_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name": "spark-graphx_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.4.5/spark-graphx_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-mllib-local_2.11",
+                    "version": "2.4.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spark-mllib-local_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.4.5/spark-mllib-local_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name": "spark-mllib-local_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.4.5/spark-mllib-local_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalanlp",
+                    "name": "breeze_2.11",
+                    "version": "0.13.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "breeze_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2.jar"
+                        },
+                        {
+                            "name": "breeze_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.google.protobuf",
                     "name": "protobuf-java",
                     "version": "3.11.4",
@@ -2138,6 +2238,120 @@
                     ]
                 },
                 {
+                    "organization": "com.github.fommil.netlib",
+                    "name": "core",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "core",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar"
+                        },
+                        {
+                            "name": "core",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sourceforge.f2j",
+                    "name": "arpack_combined_all",
+                    "version": "0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "arpack_combined_all",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalanlp",
+                    "name": "breeze-macros_2.11",
+                    "version": "0.13.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "breeze-macros_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.2/breeze-macros_2.11-0.13.2.jar"
+                        },
+                        {
+                            "name": "breeze-macros_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.2/breeze-macros_2.11-0.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.opencsv",
+                    "name": "opencsv",
+                    "version": "2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "opencsv",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar"
+                        },
+                        {
+                            "name": "opencsv",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.rwl",
+                    "name": "jtransforms",
+                    "version": "2.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jtransforms",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0.jar"
+                        },
+                        {
+                            "name": "jtransforms",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.spire-math",
+                    "name": "spire_2.11",
+                    "version": "0.13.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spire_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/spire-math/spire_2.11/0.13.0/spire_2.11-0.13.0.jar"
+                        },
+                        {
+                            "name": "spire_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/spire-math/spire_2.11/0.13.0/spire_2.11-0.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.chuusai",
+                    "name": "shapeless_2.11",
+                    "version": "2.3.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shapeless_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2.jar"
+                        },
+                        {
+                            "name": "shapeless_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.esotericsoftware",
                     "name": "minlog",
                     "version": "1.3.0",
@@ -2515,6 +2729,57 @@
                             "name": "javassist",
                             "classifier": "sources",
                             "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.spire-math",
+                    "name": "spire-macros_2.11",
+                    "version": "0.13.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spire-macros_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.13.0/spire-macros_2.11-0.13.0.jar"
+                        },
+                        {
+                            "name": "spire-macros_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.13.0/spire-macros_2.11-0.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "machinist_2.11",
+                    "version": "0.6.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "machinist_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.1/machinist_2.11-0.6.1.jar"
+                        },
+                        {
+                            "name": "machinist_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.1/machinist_2.11-0.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "macro-compat_2.11",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "macro-compat_2.11",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1.jar"
+                        },
+                        {
+                            "name": "macro-compat_2.11",
+                            "classifier": "sources",
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1-sources.jar"
                         }
                     ]
                 },
