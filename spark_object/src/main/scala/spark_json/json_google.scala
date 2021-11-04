@@ -31,6 +31,5 @@ object json_google extends App{
         val book_price = jread.get("store").getAsJsonObject().get("book").getAsJsonArray().get(0).getAsJsonObject().get("price").getAsString()
         println(book_price)
         println("-----"*20)
-
     }
 }
