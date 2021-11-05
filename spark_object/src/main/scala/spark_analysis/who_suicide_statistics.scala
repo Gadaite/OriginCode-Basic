@@ -16,13 +16,17 @@ object who_suicide_statistics extends App{
             .option("password","zzjz123")
             .load()
         // inputdf.show()
+        
         inputdf.createOrReplaceTempView("who_suicide_statistics")
         // import spark.implicits
         // import spark.sqlContext
+
         spark.sql("select * from who_suicide_statistics limit 10").show()
         //打印结构
+
         inputdf.printSchema()
         //数据预处理:剔除空值处理
+
         val data1 = spark.sql("""select * 
             from who_suicide_statistics 
             where 
@@ -31,24 +35,36 @@ object who_suicide_statistics extends App{
             and `sex` is not null 
             and `suicides_no` is not null 
             and `population` is not null
+            limit 1000
             """)
+        
         data1.createOrReplaceTempView("data1_view")
         spark.sql("""
             select count(*) as count_one from data1_view
             """).show()
         //分割训练数据与预测数据集
         //step1:dataframe转为rdd
-        val data_rdd = data1.rdd.zipWithIndex().map(x=>(x._2,x._1))
-
+        val data_rdd = data1.rdd.zipWithIndex()
+        val data_train = data_rdd.filter(x => x._2%5 !=0).keys
+        val data_test = data_rdd.filter(x => x._2%5 == 0).keys
+        
         //获取dataframe的所有列数组
         val cols = data1.schema.fields
+
+        //创建训练数据和预测数据的dataframe
+        val train_dataset = spark.createDataFrame(data_train,StructType(cols))
+        val test_dataset = spark.createDataFrame(data_test,StructType(cols))
+
+        //查看数据集结构
+        train_dataset.printSchema()
+        test_dataset.printSchema()
+
+        //查看数据集的行数
+        println(train_dataset.count())
+        println(test_dataset.count())
         
-        //step2:对rdd添加索引
-        // val new_rdd = data_rdd
-        //step3:rdd转为dataframe
-        // val datasource = spark.createDataFrame(new_rdd,Schema = List(""))
-        // val datasource = spark.createDataFrame(data_rdd)
-        // datasource.show()
+        //训练数据
+        
 
     }
 }
