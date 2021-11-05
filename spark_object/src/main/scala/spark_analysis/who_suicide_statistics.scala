@@ -3,6 +3,7 @@ package spark_analysis
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkConf
 import com.mysql.cj.xdevapi.Schema
+import org.apache.spark.sql.types._ 
 object who_suicide_statistics extends App{
     override def main(args: Array[String]): Unit = {
         val spark = SparkSession.builder.appName("app").master("local[*]").getOrCreate()
@@ -18,7 +19,7 @@ object who_suicide_statistics extends App{
         inputdf.createOrReplaceTempView("who_suicide_statistics")
         // import spark.implicits
         // import spark.sqlContext
-        spark.sql("select count(*) as All_rows from who_suicide_statistics").show()
+        spark.sql("select * from who_suicide_statistics limit 10").show()
         //打印结构
         inputdf.printSchema()
         //数据预处理:剔除空值处理
@@ -37,10 +38,17 @@ object who_suicide_statistics extends App{
             """).show()
         //分割训练数据与预测数据集
         //step1:dataframe转为rdd
-        val data_rdd = data1.rdd
+        val data_rdd = data1.rdd.zipWithIndex().map(x=>(x._2,x._1))
+
+        //获取dataframe的所有列数组
+        val cols = data1.schema.fields
+        
         //step2:对rdd添加索引
-        val new_rdd = data_rdd.map(x => x.toString().substring(1,x.toString().length - 1)).zipWithIndex()
+        // val new_rdd = data_rdd
         //step3:rdd转为dataframe
         // val datasource = spark.createDataFrame(new_rdd,Schema = List(""))
+        // val datasource = spark.createDataFrame(data_rdd)
+        // datasource.show()
+
     }
 }
