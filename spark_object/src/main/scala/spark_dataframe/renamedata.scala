@@ -36,10 +36,13 @@ object renamedata extends App{
 
         //注册udf函数
         val udf_en2zh = functions.udf(en2zh(_:String),StringType)
+
         //使用udf函数新增一列
         val temp_df = inputdf.withColumn("job",udf_en2zh(inputdf.col("code")))
+
         //注册临时表
         temp_df.createOrReplaceTempView("temp_table")
+        
         temp_df.show()
         val outputdf = spark.sql("""
             select `No`,`name`,`job` from temp_table
