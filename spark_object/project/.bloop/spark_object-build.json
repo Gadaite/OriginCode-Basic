@@ -18,7 +18,7 @@
         "classpath": [
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.5.5/sbt-1.5.5.jar",
             "/root/.sbt/boot/scala-2.12.14/lib/scala-library.jar",
-            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.10-8-8d1cbc4f/sbt-bloop-1.4.10-8-8d1cbc4f.jar",
+            "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.11/sbt-bloop-1.4.11.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.5.5/main_2.12-1.5.5.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.5.1/io_2.12-1.5.1.jar",
             "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.5.0/jna-5.5.0.jar",
@@ -213,17 +213,17 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.4.10-8-8d1cbc4f",
+                    "version": "1.4.11",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.10-8-8d1cbc4f/sbt-bloop-1.4.10-8-8d1cbc4f.jar"
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.11/sbt-bloop-1.4.11.jar"
                         },
                         {
                             "name": "sbt-bloop",
                             "classifier": "sources",
-                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.10-8-8d1cbc4f/sbt-bloop-1.4.10-8-8d1cbc4f-sources.jar"
+                            "path": "/root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.11/sbt-bloop-1.4.11-sources.jar"
                         }
                     ]
                 },
