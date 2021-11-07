@@ -29,3 +29,6 @@
 
 8.      压缩文件夹： zip -r flask_ymade.zip flask_api_ymade
         解压缩文件： unzip flask_ymade.zip
+
+9.      Github总代码量：git log --author="Gadaite" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+        Github
