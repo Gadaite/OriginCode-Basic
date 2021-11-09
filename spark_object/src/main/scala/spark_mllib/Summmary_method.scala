@@ -13,6 +13,12 @@ object Summmary_method extends App{
             .map(_.split(' ') //按“ ”分割
             .map(_.toDouble)) //转成Double类型
             .map(line => Vectors.dense(line)) //转成Vector格式
+        /**
+          * 百度翻译结果：
+          * Statistics：统计数字
+          * Vectors：向量
+          * linalg模块包含线性代数的函数。使用这个模块，可以计算逆矩阵、求特征值、解线性方程组以及求解行列式等
+          */
         val summary = Statistics.colStats(rdd) //获取Statistics实例
         println(summary.mean) //计算均值
         println(summary.variance) //计算标准差
