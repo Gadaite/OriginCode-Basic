@@ -3,6 +3,7 @@ package spark_mllib
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.random.RandomRDDs.normalRDD
+import scala.util.Random
 
 object RandomRDD extends App{
     override def main(args: Array[String]): Unit = {
@@ -23,5 +24,6 @@ object RandomRDD extends App{
             -0.8114515325316612,-0.15621579892382528,1.3624755693951942,1.3888200983904404,0.21640507568435013,
             -0.9231179647185063,1.0393142342702277,0.33540504285266765,-2.657723659876138,0.6803840245620559,
           */
+        
     }
 }
