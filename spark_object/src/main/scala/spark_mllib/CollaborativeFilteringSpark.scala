@@ -42,7 +42,7 @@ object CollaborativeFilteringSpark extends App{
             val temp1 = math.sqrt(user1FilmSource.map(num => { //求出分母第1个变量值
                 math.pow(num, 2) //数学计算
             }).reduce(_ + _)) //进行叠加
-            val temp2 = math.sqrt(user2FilmSource.map(num => { ////求出分母第2个变量值
+            val temp2 = math.sqrt(user2FilmSource.map(num => { //求出分母第2个变量值
                 math.pow(num, 2) //数学计算
             }).reduce(_ + _)) //进行叠加
             val denominator = temp1 * temp2 //求出分母
