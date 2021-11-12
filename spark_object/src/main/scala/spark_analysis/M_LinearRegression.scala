@@ -46,7 +46,7 @@ object M_LinearRegression extends App{
         println("-----"*20)
         // 提供新的待测数据, Vectors.dense(0, 1) 人为创建一个MLlib数据向量输入到已构成的数据模型中
         println(model.predict(Vectors.dense(0, 1)))
-
+      
 
 
     }
