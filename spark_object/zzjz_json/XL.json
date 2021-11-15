@@ -1,0 +1,190 @@
+[
+    {
+        "id": "nav-ef86df9a",
+        "name": "div",
+        "style": "width: 100%;background: #0b1939;color: #fff;height: 70px;display: block;position: fixed;top: 0px;left: 0px;z-index: 100;",
+        "children": [
+            {
+                "id": "c-882cbd06",
+                "name": "div",
+                "style": "display: inline-block;font-size: 28px;line-height: 70px;margin-left: 20px;font-weight: bold;",
+                "children": [
+                    "GJYDWXDWFX"
+                ]
+            },
+            {
+                "id": "nav-0c356b99",
+                "name": "ul",
+                "style": "list-style-type: none; padding: 0; margin: 0; display: inline-block; margin-left: 60px; line-height: 70px; position: relative; top: -5px",
+                "children": [
+                    {
+                        "id": "tab-86e651c3",
+                        "name": "jz-button",
+                        "style": "display: inline-block; margin-right: 30px; cursor: pointer; border: 0; background: #0b1939; width: 9%; min-width: 80px",
+                        "data": {
+                            "text": "WZ分析",
+                            "data": "WZ分析GQ",
+                            "type": "app",
+                            "callback": "goToApp",
+                            "autorun": "true",
+                            "endpos": "yWKX0eaG"
+                        }
+                    },
+                    {
+                        "id": "tab-5c3d2ec5",
+                        "name": "jz-button",
+                        "style": "display: inline-block; margin-right: 30px; cursor: pointer; border: 0; background: #0b1939; width: 9%; min-width: 80px",
+                        "data": {
+                            "text": "MB搜索",
+                            "data": "MB搜索GQ",
+                            "type": "app",
+                            "callback": "goToApp",
+                            "autorun": "false",
+                            "endpos": "DmwBrNpP"
+                        }
+                    },
+                    {
+                        "id": "tab-RmPJSq5c",
+                        "name": "jz-button",
+                        "style": "display: inline-block; margin-right: 30px; cursor: pointer; border: 0; background: #0b1939; width: 9%; min-width: 80px",
+                        "data": {
+                            "text": "TL查询",
+                            "data": "TL查询GQ",
+                            "type": "app",
+                            "callback": "goToApp",
+                            "autorun": "false",
+                            "endpos": ""
+                        }
+                    },
+                    {
+                        "id": "tab-QvAPnZXR",
+                        "name": "jz-button",
+                        "style": "display: inline-block; margin-right: 30px; cursor: pointer; border: 0; background: #0b1939; width: 9%; min-width: 80px",
+                        "data": {
+                            "text": "XL查询",
+                            "data": "XL查询GQ",
+                            "type": "app",
+                            "callback": "goToApp",
+                            "autorun": "false",
+                            "endpos": ""
+                        }
+                    },
+                    {
+                        "id": "tab-djkLIVY3",
+                        "name": "jz-button",
+                        "style": "display: inline-block; margin-right: 30px; cursor: pointer; border: 0; background: #0b1939; width: 9%; min-width: 80px",
+                        "data": {
+                            "text": "报表展示",
+                            "data": "报表展示GQ",
+                            "type": "app",
+                            "callback": "goToApp",
+                            "autorun": "false",
+                            "endpos": ""
+                        }
+                    },
+                    {
+                        "id": "tab-782c25b9",
+                        "name": "jz-button",
+                        "style": "display: inline-block; margin-right: 30px; cursor: pointer; border: 0; background: #0b1939; width: 9%; min-width: 150px;",
+                        "data": {
+                            "text": "MB类别可视化",
+                            "data": "MB类别可视化GQ",
+                            "type": "app",
+                            "callback": "goToApp",
+                            "autorun": "true",
+                            "endpos": "YPGQCoBg"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "nav-36d0cbe3",
+                "name": "div",
+                "style": "float: right;margin-right: 20px;padding-top: -3px;",
+                "children": [
+                    {
+                        "id": "nav-711d5aa8",
+                        "name": "div",
+                        "style": "display: inline-block; margin-right: 20px; position: relative; top: 15px;",
+                        "children": [
+                            {
+                                "id": "img-74cfc5b9",
+                                "name": "img",
+                                "style": "width: 30px;",
+                                "data": {
+                                    "src": "images/bell.png"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "usr-5a8fbe6c",
+                        "name": "div",
+                        "style": "display: inline-block; position: relative; top: 15px;",
+                        "children": [
+                            {
+                                "id": "img-a1e16394",
+                                "name": "img",
+                                "style": "width: 40px;",
+                                "data": {
+                                    "src": "images/avatar.png"
+                                }
+                            },
+                            {
+                                "id": "usr-70a3d666",
+                                "name": "span",
+                                "style": "display: inline-block;margin-left: 5px;",
+                                "children": [
+                                    "{{userName}}"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "div-button-d9e7e349",
+        "name": "div",
+        "style": "display:inline-block;position:fixed;top:70px;left:0;width:100%;height:42px;z-index:100;border-bottom: double 2px #242379;background-color: #494a53",
+        "children": [
+            {
+                "id": "RjUd1E0Q",
+                "name": "jz-step",
+                "style": "display:inline-block;margin:5px 0% 5px 0.5%;height:30px;width:10%;overflow:hidden;",
+                "data": {
+                    "nodeid": "upPWFke2",
+                    "text": "TL查询",
+                    "period": ""
+                }
+            }
+        ]
+    },
+    {
+        "id": "param-PTRuNvWt",
+        "name": "jz-param-panel",
+        "style": "float:left;height:420px;width:350px;padding-top:130px;",
+        "data": {
+            "model-setting": "modelSetting"
+        }
+    },
+    {
+        "id": "uLINTj9E",
+        "name": "jz-chart",
+        "style": "width:calc(100% - 350px);height:800px;float:left;padding-top:130px;",
+        "data": {
+            "nodeid": "upPWFke2",
+            "chartidx": "0",
+            "filternodeid": "",
+            "tip": "节点查询结果的preContainer1-分页表格_简约",
+            "image": "192.168.11.102:6093/app/resource/icon/line_chart_64x64.png",
+            "panelId": "",
+            "optionpanelid": "",
+            "layouts": "layouts",
+            "paramsetting": "modelSetting.paramSettings",
+            "flow": "diagram",
+            "setstyle": ""
+        }
+    }
+]
