@@ -81,6 +81,7 @@ libraryDependencies +="org.apache.spark"%%"spark-core"%"2.4.5"
 libraryDependencies +="org.apache.spark"%%"spark-sql"%"2.4.5"
 libraryDependencies +="org.apache.spark"%%"spark-mllib"%"2.4.5"
 libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.24"
+libraryDependencies += "org.postgresql" % "postgresql" % "9.4-1204.jdbc42" % "provided"
 // libraryDependencies +="com.jayway.jsonpath"%%"spark-mllib"%"2.4.5"
 
 logLevel := Level.Error
