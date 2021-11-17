@@ -7,7 +7,7 @@ object postgresql_connect extends App{
         val spark = SparkSession.builder().appName("app").master("local[*]").getOrCreate()
         val jdbcdf = spark.read.format("jdbc")
             .option("driver","org.postgresql.Driver")
-            .option("url","jdbc:postgresql://139.155.70.177/trajectory")
+            .option("url","jdbc:postgresql://139.155.70.177:5432/trajectory")
             .option("dbtable","lastappeared")
             .option("user","postgres")
             .option("password","zzjz123")
