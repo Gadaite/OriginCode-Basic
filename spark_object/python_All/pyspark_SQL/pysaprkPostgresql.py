@@ -9,3 +9,4 @@ jdbcdf = spark.read.format("jdbc")\
             .option("password","zzjz123")\
             .load()
 jdbcdf.show()
+
