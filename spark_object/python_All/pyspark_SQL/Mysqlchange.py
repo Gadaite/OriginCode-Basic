@@ -1,6 +1,8 @@
 #%%
 from functools import update_wrapper
 from io import StringIO
+from itertools import count
+from sys import setprofile
 from pyspark.sql import SparkSession
 from pyspark import SparkConf,SparkContext, conf
 from pyspark.sql.types import Row, StringType, StructField
@@ -53,8 +55,30 @@ deletedf = spark.sql("""
 deletedf.show()
 #%%
 #更新数据库中的表,先删除原有数据库中有冲突主键的内容，之后再插入新的内容，实现更新
+#step1:判断表中是否存在该条数据，以order_num为主键，测试使用30000
+yorndf = spark.sql("""select count(*) as count from temp_table where order_num == "30000" """) 
+yorndf.show()
+count = yorndf.collect()[0][0]
+count
+#%%
+#step2:根据count的值判断是否存在，如果存在就进行更新
+#键入的数据如下:        "30000","2021-11-19 16:11:05","1000000028"
+listupdate = ["30000","2021-11-19 16:11:05","1000000028"]
+if(count != 0):
+    steponedf = spark.sql("""
+        select * from temp_table where `order_num` != "30000"
+        """)
+    steponedf.show()
+    steptwodf = spark.createDataFrame(sc.parallelize(Row(listupdate)),schemas)
+    steptwodf.show()
+#%%
+# step3更新数据库，合并具有相同结构的两个df
+updatedf = steponedf.unionAll(steptwodf)
+updatedf.show()
 
 
 
 
 
+
+# %%
