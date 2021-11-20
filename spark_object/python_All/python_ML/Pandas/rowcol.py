@@ -51,3 +51,9 @@ data[(data["B"]>2) & (data["B"]<7)]
 # 字符串的长度作为bool索引
 datasource[datasource["transmission"].str.len()>6]
 #%%
+#%%
+datasource
+#%%
+datasource.iloc[0:4,:]
+#%%
+datasource.loc[:,"model":"fuelType"]
