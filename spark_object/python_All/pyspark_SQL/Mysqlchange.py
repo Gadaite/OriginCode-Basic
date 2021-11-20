@@ -76,9 +76,4 @@ if(count != 0):
 updatedf = steponedf.unionAll(steptwodf)
 updatedf.show()
 
-
-
-
-
-
 # %%
