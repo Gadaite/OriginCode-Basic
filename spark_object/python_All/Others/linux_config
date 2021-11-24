@@ -2,7 +2,11 @@
 
 2.      systemctl status/start/stop flask_api/flask_ymade
 
-3.      pg_dump -U postgres -d myDBname -f dump.sql
+3.      postgresql数据库的备份：
+        pg_dump -U postgres -d myDBname -f dump.sql
+        导出文件到宿主机
+        
+
 
 4.      createdb newDBname
         psql -d newDBname -U postgres -f dump.sql
@@ -32,3 +36,6 @@
 
 9.      Github总代码量：git log --author="Gadaite" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
         Github
+
+
+
