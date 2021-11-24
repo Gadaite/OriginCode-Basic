@@ -23,11 +23,9 @@ object dataframe_one extends App{
     val col4 = ""//界面参数输入importancelevel
     val seqinput = Seq(Row(imsi.toString(),col1,col2,col3,col4))
     val schema = StructType(List(
-        StructField("imsi",StringType),
-        StructField("col1",StringType),
-        StructField("col2",StringType),
-        StructField("col3",StringType),
-        StructField("col4",StringType)
+        StructField("name",StringType),
+        StructField("age",StringType),
+        StructField("phone",StringType)
     ))
     val condition_rdd = sc.parallelize(seqinput)
     val condition_df = spark.createDataFrame(condition_rdd,schema)

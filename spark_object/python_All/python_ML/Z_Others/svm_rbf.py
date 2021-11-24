@@ -17,7 +17,7 @@ from sklearn import metrics
 from sklearn.tree import DecisionTreeClassifier
 #%%
 #Read Data
-s_file_path = r"/root/python_All/Dataset/线性不可分类别.csv"
+s_file_path = r"/root/Github_files/spark_object/python_All/Dataset/线性不可分类别.csv"
 df_in = pd.read_csv(s_file_path)
 
 train_x = np.array([df_in["x"], df_in["y"]]).T
