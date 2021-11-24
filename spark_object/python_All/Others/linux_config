@@ -5,7 +5,8 @@
 3.      postgresql数据库的备份：
         pg_dump -U postgres -d myDBname -f dump.sql
         导出文件到宿主机
-        
+        docker cp postgis:/'''  /path/'''
+
 
 
 4.      createdb newDBname
