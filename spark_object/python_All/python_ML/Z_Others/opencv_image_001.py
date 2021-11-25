@@ -4,9 +4,10 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 #%%
-image = cv2.imread("/root/Github_files/python_All/Dataset/OpenCV001.jpg",cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("/root/Github_files/spark_object/python_All/Dataset/OpenCV001.jpg",cv2.IMREAD_GRAYSCALE)
 #%%
-plt.imshow(image, cmap="gray"), plt.axis("off")
+plt.imshow(image, cmap="gray")
+plt.axis("off")
 plt.show()
 #%%
 print(type(image))##<class 'numpy.ndarray'>
@@ -22,7 +23,7 @@ plt.axis("off")
 plt.show()
 #%%
 #以彩色模式加载图像并进行裁剪
-image_colr = cv2.imread("/root/Github_files/python_All/Dataset/OpenCV001.jpg",cv2.IMREAD_COLOR)
+image_colr = cv2.imread("/root/Github_files/spark_object/python_All/Dataset/OpenCV001.jpg",cv2.IMREAD_COLOR)
 image_colr[250][250]##array([188, 212, 212], dtype=uint8)
 #%%
 image_colrs = image_colr[0:450][:][:]
@@ -33,11 +34,11 @@ plt.axis("off")
 plt.show()
 #%%
 #sava image
-cv2.imwrite("/root/Github_files/python_All/Dataset/OpenCV001temp1.jpg",image_colrs)
+cv2.imwrite("/root/Github_files/spark_object/python_All/Dataset/OpenCV001temp1.jpg",image_colrs)
 #  True
 #%%
 #改变图像大小，是像素的大小
-image_gray = cv2.imread("/root/Github_files/python_All/Dataset/OpenCV001temp1.jpg",cv2.IMREAD_GRAYSCALE)
+image_gray = cv2.imread("/root/Github_files/spark_object/python_All/Dataset/OpenCV001.jpg",cv2.IMREAD_GRAYSCALE)
 image_gray_50X50 = cv2.resize(image_gray,(100,100)) 
 plt.imshow(image_gray_50X50,cmap="gray")
 plt.axis("off")

@@ -10,7 +10,7 @@ kernel = np.array([[0, -1, 0],\
                     [0, -1, 0]])
 #%%
 #加载彩色图像,读取为ndarray数组并进行查看
-image_grey = cv2.imread("/root/Github_files/python_All/Dataset/OpenCV001temp1.jpg",cv2.IMREAD_GRAYSCALE)
+image_grey = cv2.imread("/root/Github_files/spark_object/python_All/Dataset/OpenCV001temp1.jpg",cv2.IMREAD_GRAYSCALE)
 plt.imshow(image_grey)
 #%%
 #锐化图像
@@ -23,7 +23,7 @@ image_grey_enhanced = cv2.equalizeHist(image_grey)
 plt.imshow(image_grey_enhanced,cmap="gray")
 #%%
 #彩色图提升对比度,读取
-image_color = cv2.imread("/root/Github_files/python_All/Dataset/OpenCV001temp1.jpg")
+image_color = cv2.imread("/root/Github_files/spark_object/python_All/Dataset/OpenCV001temp1.jpg")
 plt.imshow(image_color)
 #%%
 #step1:转换为YUV 格式
