@@ -102,3 +102,90 @@
 # 每组样例输出密码等级
 
 #%%
+while True:
+    try:
+        x= input()
+        def func1(x):#长度
+            if(len(x)<=4):
+                return int(5)
+            elif 5<=len(x)<=7:
+                return 10
+            else:
+                return 25
+        def func2(x):#字母
+            count1 =0
+            count2 =0
+            for i in x:
+                if 'a'<=i<='z':
+                    count1 += 1
+                if 'A'<=i<='Z':
+                    count2 += 1
+            if(count1==0 and count2==0):
+                return int(0)
+            elif count1!=0 and count2!=0:
+                return 20
+            else:
+                return 10
+        def func3(x):#数字
+            s="0123456789"
+            count =0
+            for i in x:
+                if i in s:
+                    count += 1
+            if count==0:
+                return int(0)
+            elif count==1:
+                return 10
+            else:
+                return 20
+        def func4(x):#符号
+            s = """!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
+            count =0
+            for i in x:
+                if i in s:
+                    count += 1
+            if count==0:
+                return int(0)
+            elif count==1:
+                return 10
+            else:
+                return 25
+        def func5():
+            if func2(x)!=0 and func3(x)!=0 and func4(x)==0:
+                return 2
+            elif func2(x)==10 and func3(x)!=0 and func4(x)!=0:
+                return 3
+            elif func2(x)==20 and func3(x)!=0 and func4(x)!=0:
+                return 5
+            else:
+                return int(0)
+        res=0
+        res = func1(x)+func2(x)+func3(x)+func4(x)+func5()
+        if res>=90:
+            print("VERY_SECURE")
+        elif 80<=res<90:
+            print("SECURE")
+        elif 70<=res<80:
+            print("VERY_STRONG")
+        elif 60<=res<70:
+            print("STRONG")
+        elif 50<=res<60:
+            print("AVERAGE")
+        elif 25<=res<50:
+            print("WEAK")
+        else:
+            print("VERY_WEAK")                 
+    except:
+        break
+#%%
+print(res)
+#%%
+func1(x)
+#%%
+func2(x)
+#%%
+func3(x)
+#%%
+func4(x)
+#%%
+func5()
