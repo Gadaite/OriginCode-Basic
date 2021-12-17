@@ -26,21 +26,20 @@ while True:
         if(len(x)<1 or len(x)>2):
             print("unknown command")
         elif len(x)==1:
-            for i in range(0,len(keys)):
-                if keys[i][0:len(x)]==x[0]:
-                    print(values[i])
-                    break
-                else:
-                    print("unknown command")
+            if x[0]==keys[0][0:len(x[0])]:
+                print(values[0])
+            else:
+                print("unknown command")    
         else:
+            lst=[]
             for i in range(1,len(keys)):
                 a = keys[i].split(" ")[0]
                 b = keys[i].split(" ")[1]
                 if a[0:len(x[0])]==x[0] and b[0:len(x[1])]==x[1]:
-                    print(values[i])
-                    break
-                else:
-                    print("unknown command")
-
+                    lst.append(values[i])
+            if len(lst)==1:
+                print(lst[0])
+            else:
+                print("unknown command")
     except:
         break
