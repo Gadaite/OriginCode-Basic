@@ -8,12 +8,9 @@ object SDG_method extends App{
 
         val xx = 1 -> 10
         println(xx)
-
         /**
           * (1,10)
-          */
-
-        
+          */        
         //生成数据
         val data = HashMap[Int,Int]()
         //生成数据集内容

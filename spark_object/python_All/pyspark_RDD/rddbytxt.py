@@ -12,3 +12,5 @@ words = rdd_1.flatMap(lambda line:line.split(" ")).\
     map(lambda line:(line,1)).\
     reduceByKey(lambda x,y:x+y)
 words.collect()
+
+
